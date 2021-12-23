@@ -1,0 +1,6 @@
+- - matlab calculations 
+- buying the sensor: doing the LUT/calibration
+- LCD i2c driver 
+- mechanical structure 
+- Desktop App: P I D: Widgets[dragbars] 
+   
