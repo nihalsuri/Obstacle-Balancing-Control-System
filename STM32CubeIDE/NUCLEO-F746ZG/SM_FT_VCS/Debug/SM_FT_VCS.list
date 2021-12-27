@@ -1958,12 +1958,12 @@ void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
  80012a8:	40020400 	.word	0x40020400
 
 080012ac <delay>:
-
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
 
-void delay(uint16_t time){
+void delay(uint16_t time)
+{
  80012ac:	b480      	push	{r7}
  80012ae:	b083      	sub	sp, #12
  80012b0:	af00      	add	r7, sp, #0
