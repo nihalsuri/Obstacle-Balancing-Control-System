@@ -1,0 +1,24 @@
+!SESSION 2021-12-27 18:42:53.547 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-12-27 18:42:58.338
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-12-27 18:42:58.401
+!MESSAGE Log4j initialized with config file C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-12-27 18:43:09.463
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-12-27 18:45:23.012
+!MESSAGE Indexed 'SM_FT_VCS' (35 sources, 97 headers) in 3.59 sec: 8,017 declarations; 63,470 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0028%)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2021-12-27 18:50:18.169
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 216000000; div: 108
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2021-12-27 18:53:37.182
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 216000000; div: 108
