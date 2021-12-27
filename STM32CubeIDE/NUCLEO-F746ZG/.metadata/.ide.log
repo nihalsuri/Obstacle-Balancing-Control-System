@@ -601,3 +601,136 @@
 2021-12-27 18:45:20,197 [INFO] McuFinderGlobals:52 - Set McuFinderConnectedMode to true
 2021-12-27 18:45:20,198 [INFO] ApiDb:276 - Save user favorites file C:\Users\Nihal/.stm32cubeide/favorites.mcus.txt: 1 item(s)
 2021-12-27 18:45:20,198 [INFO] ApiDb:280 - User favorites MCUs=[STM32F411RETx]
+2021-12-27 22:54:46,978 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 649216704 Bytes (911212544)
+2021-12-27 22:54:47,494 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SPI
+2021-12-27 22:54:47,495 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F7
+2021-12-27 22:54:47,495 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F7
+2021-12-27 22:54:47,495 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2021-12-27 22:54:47,495 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: ADC
+2021-12-27 22:54:47,495 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2021-12-27 22:54:47,496 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: I2C
+2021-12-27 22:54:47,496 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2021-12-27 22:54:47,496 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: USART
+2021-12-27 22:54:47,497 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: DMA
+2021-12-27 22:54:47,497 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F7
+2021-12-27 22:54:47,498 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2021-12-27 22:54:47,500 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2021-12-27 22:54:47,536 [INFO] Argument:294 - Argument : hdmavalue: null
+2021-12-27 22:54:47,536 [INFO] Argument:296 - 	 sub Args: 
+2021-12-27 22:54:47,536 [INFO] Argument:294 - Argument : Instancevalue: DMA2_Stream0
+2021-12-27 22:54:47,536 [INFO] Argument:304 - Argument : Instancevalue: DMA2_Stream0
+2021-12-27 22:54:47,536 [INFO] Argument:294 - Argument : Initvalue: null
+2021-12-27 22:54:47,540 [INFO] Argument:296 - 	 sub Args: 
+2021-12-27 22:54:47,540 [INFO] Argument:294 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-27 22:54:47,540 [INFO] Argument:304 - Argument : Channelvalue: DMA_CHANNEL_0
+2021-12-27 22:54:47,540 [INFO] Argument:294 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-27 22:54:47,540 [INFO] Argument:304 - Argument : Directionvalue: DMA_PERIPH_TO_MEMORY
+2021-12-27 22:54:47,540 [INFO] Argument:294 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : PeriphIncvalue: DMA_PINC_DISABLE
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : MemIncvalue: DMA_MINC_ENABLE
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : PeriphDataAlignmentvalue: DMA_PDATAALIGN_HALFWORD
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : MemDataAlignmentvalue: DMA_MDATAALIGN_HALFWORD
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : Modevalue: DMA_CIRCULAR
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : Priorityvalue: DMA_PRIORITY_LOW
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : FIFOModevalue: DMA_FIFOMODE_DISABLE
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : FIFOThresholdvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : FIFOThresholdvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : MemBurstvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : MemBurstvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : PeriphBurstvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : PeriphBurstvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : Lockvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : Lockvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : Statevalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : Statevalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : Parentvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : Parentvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : XferCpltCallbackvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : XferCpltCallbackvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : XferHalfCpltCallbackvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : XferM1CpltCallbackvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : XferM1CpltCallbackvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : XferErrorCallbackvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : XferErrorCallbackvalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:294 - Argument : ErrorCodevalue: null
+2021-12-27 22:54:47,541 [INFO] Argument:304 - Argument : ErrorCodevalue: null
+2021-12-27 22:54:50,333 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\MXTmpFiles\license.tmp_save
+2021-12-27 22:54:50,446 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\MXTmpFiles\license.tmp
+2021-12-27 22:54:50,638 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\gpio.c_save
+2021-12-27 22:54:50,741 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\gpio.c
+2021-12-27 22:54:50,752 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\gpio.h_save
+2021-12-27 22:54:50,905 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\gpio.h
+2021-12-27 22:54:51,287 [ERROR] IPConfigManager:1513 - ERROR: the RefConfig FASTMODE_Config is not available in your config.xml file
+2021-12-27 22:54:52,523 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\adc.c_save
+2021-12-27 22:54:52,748 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\adc.c
+2021-12-27 22:54:52,764 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\adc.h_save
+2021-12-27 22:54:52,886 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\adc.h
+2021-12-27 22:54:52,895 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\MXTmpFiles\cortex.tmp_save
+2021-12-27 22:54:52,967 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\MXTmpFiles\cortex.tmp
+2021-12-27 22:54:53,051 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\dma.c_save
+2021-12-27 22:54:53,137 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\dma.c
+2021-12-27 22:54:53,151 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\dma.h_save
+2021-12-27 22:54:53,277 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\dma.h
+2021-12-27 22:54:53,316 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\i2c.c_save
+2021-12-27 22:54:53,501 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\i2c.c
+2021-12-27 22:54:53,510 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\i2c.h_save
+2021-12-27 22:54:53,633 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\i2c.h
+2021-12-27 22:54:53,667 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\spi.c_save
+2021-12-27 22:54:53,828 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\spi.c
+2021-12-27 22:54:53,835 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\spi.h_save
+2021-12-27 22:54:53,914 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\spi.h
+2021-12-27 22:54:53,936 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\tim.c_save
+2021-12-27 22:54:54,179 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\tim.c
+2021-12-27 22:54:54,190 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\tim.h_save
+2021-12-27 22:54:54,274 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\tim.h
+2021-12-27 22:54:54,292 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\usart.c_save
+2021-12-27 22:54:54,455 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\usart.c
+2021-12-27 22:54:54,464 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\usart.h_save
+2021-12-27 22:54:54,611 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\usart.h
+2021-12-27 22:54:54,680 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\stm32f7xx_it.c_save
+2021-12-27 22:54:54,855 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\stm32f7xx_it.c
+2021-12-27 22:54:54,866 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\stm32f7xx_it.h_save
+2021-12-27 22:54:54,960 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\stm32f7xx_it.h
+2021-12-27 22:54:54,981 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\stm32f7xx_hal_msp.c_save
+2021-12-27 22:54:55,155 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\stm32f7xx_hal_msp.c
+2021-12-27 22:54:55,160 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\MXTmpFiles\system.tmp_save
+2021-12-27 22:54:55,268 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\MXTmpFiles\system.tmp
+2021-12-27 22:54:55,289 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\stm32f7xx_hal_conf.h_save
+2021-12-27 22:54:55,464 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\stm32f7xx_hal_conf.h
+2021-12-27 22:54:55,528 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\main.h_save
+2021-12-27 22:54:55,654 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Inc\main.h
+2021-12-27 22:54:55,670 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\main.c_save
+2021-12-27 22:54:55,846 [INFO] CodeEngine:257 - Generated code: C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\Core\Src\main.c
+2021-12-27 22:54:57,334 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 241mS.
+2021-12-27 22:54:57,339 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2021-12-27 22:54:58,141 [INFO] ConfigFileManager:1271 - The Die is : DIE449
+2021-12-27 22:55:02,266 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 4927mS.
+2021-12-27 22:55:02,269 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 2mS.
+2021-12-27 22:55:02,273 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
+2021-12-27 23:51:41,933 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] Exception in thread "AWT-EventQueue-0" org.eclipse.swt.SWTException: Device is disposed
+2021-12-27 23:51:41,937 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4889)
+2021-12-27 23:51:41,937 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4804)
+2021-12-27 23:51:41,941 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.SWT.error(SWT.java:4775)
+2021-12-27 23:51:41,946 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.error(Display.java:1262)
+2021-12-27 23:51:41,947 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at org.eclipse.swt.widgets.Display.asyncExec(Display.java:779)
+2021-12-27 23:51:41,953 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at com.st.stm32cube.common.mx.oss.core.awtswtbridge.AwtEnvironment$2.run(AwtEnvironment.java:168)
+2021-12-27 23:51:41,958 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:313)
+2021-12-27 23:51:41,966 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+2021-12-27 23:51:41,971 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+2021-12-27 23:51:41,976 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+2021-12-27 23:51:41,978 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.AccessController.doPrivileged(Native Method)
+2021-12-27 23:51:41,986 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+2021-12-27 23:51:41,991 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+2021-12-27 23:51:41,994 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+2021-12-27 23:51:42,002 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+2021-12-27 23:51:42,009 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+2021-12-27 23:51:42,015 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+2021-12-27 23:51:42,020 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+2021-12-27 23:51:42,029 [ERROR] LogOutputStream:74 - [STDERR_REDIRECT] 	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)

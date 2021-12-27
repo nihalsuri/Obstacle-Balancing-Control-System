@@ -1,0 +1,39 @@
+/*
+ * hcsro4.h
+ *
+ *  Created on: Dec 27, 2021
+ *      Author: Nihal Suri
+ */
+
+#ifndef INC_HCSRO4_H_
+#define INC_HCSRO4_H_
+
+#include "main.h"
+#include "adc.h"
+#include "dma.h"
+#include "i2c.h"
+#include "spi.h"
+#include "tim.h"
+#include "usart.h"
+#include "gpio.h"
+
+
+uint32_t IC_Val1 = 0;
+uint32_t IC_Val2 = 0;
+uint32_t Difference = 0;
+uint8_t Is_First_Captured = 0;  // is the first value captured ?
+uint8_t Distance  = 0;
+
+
+#define TRIG_PIN GPIO_PIN_7
+#define TRIG_PORT GPIOC
+
+
+void delay_us(uint16_t time);
+void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim);
+void HCSRO4_Read (void);
+
+
+
+
+#endif /* INC_HCSRO4_H_ */

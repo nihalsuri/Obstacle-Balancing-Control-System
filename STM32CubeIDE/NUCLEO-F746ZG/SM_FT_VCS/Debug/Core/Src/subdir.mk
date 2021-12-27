@@ -8,6 +8,7 @@ C_SRCS += \
 ../Core/Src/adc.c \
 ../Core/Src/dma.c \
 ../Core/Src/gpio.c \
+../Core/Src/hcsro4.c \
 ../Core/Src/i2c.c \
 ../Core/Src/main.c \
 ../Core/Src/spi.c \
@@ -23,6 +24,7 @@ OBJS += \
 ./Core/Src/adc.o \
 ./Core/Src/dma.o \
 ./Core/Src/gpio.o \
+./Core/Src/hcsro4.o \
 ./Core/Src/i2c.o \
 ./Core/Src/main.o \
 ./Core/Src/spi.o \
@@ -38,6 +40,7 @@ C_DEPS += \
 ./Core/Src/adc.d \
 ./Core/Src/dma.d \
 ./Core/Src/gpio.d \
+./Core/Src/hcsro4.d \
 ./Core/Src/i2c.d \
 ./Core/Src/main.d \
 ./Core/Src/spi.d \
