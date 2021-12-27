@@ -1,3 +1,3 @@
-hcsro4.c:12:6:delay_us	16	static
-hcsro4.c:23:6:HAL_TIM_IC_CaptureCallback	16	static
-hcsro4.c:63:6:HCSRO4_Read	16	static
+hcsro4.c:43:6:delay_us	16	static
+hcsro4.c:59:6:HAL_TIM_IC_CaptureCallback	16	static
+hcsro4.c:106:6:HCSRO4_Read	16	static

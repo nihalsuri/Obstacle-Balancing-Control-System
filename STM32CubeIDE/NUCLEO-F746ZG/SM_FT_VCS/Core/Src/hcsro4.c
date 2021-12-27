@@ -1,13 +1,44 @@
-/*
- * hcsro4.c
- *
- *  Created on: Dec 27, 2021
- *      Author: Nihal Suri
- */
+/**
+  ******************************************************************************
+  * @file    hcsro4.h
+  * @authors  NS        Nihal.Suri@student.put.poznan.pl     MM          Maciej.Mirecki@student.put.poznan.pl
+  * @version 2.0
+  * @date    28-12-2021
+  * @brief   Driver for ultrasonic distance sensor with Timer Input Capture Mode: HCSRO4.
+  *
+  ******************************************************************************
+  */
 
+/* Includes ------------------------------------------------------------------*/
 #include"hcsro4.h"
 
 
+/* Typedef -------------------------------------------------------------------*/
+
+/* Define --------------------------------------------------------------------*/
+
+/* Macro ---------------------------------------------------------------------*/
+
+/* Private variables ---------------------------------------------------------*/
+
+/* Public variables ----------------------------------------------------------*/
+
+/* Private function prototypes -----------------------------------------------*/
+
+/* Private function ----------------------------------------------------------*/
+
+/* Public function -----------------------------------------------------------*/
+
+
+
+
+/**
+ * @brief delay procedure.
+ * @note delay between transmitting and receiving pulses
+ * @param[in] time :  time in microseconds
+ * @param[in] htim8 :  Input Capture timer handler
+ * @return None
+ */
 
 void delay_us(uint16_t time, TIM_HandleTypeDef *htim8)
 {
@@ -17,7 +48,12 @@ void delay_us(uint16_t time, TIM_HandleTypeDef *htim8)
 }
 
 
-
+/**
+ * @brief Input Capture Timer Callback.
+ * @note Calculates distance by difference in time between pulses
+ * @param[in] htim8 :  Input Capture timer handler
+ * @return None
+ */
 
 
 void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim8)
@@ -57,6 +93,13 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim8)
 	}
 }
 
+
+/**
+ * @brief Reads sensor values
+ * @note Changes state of TRIG pin and enables interupt for timer
+ * @param[in] htim8 :  Input Capture timer handler
+ * @return None
+ */
 
 
 
