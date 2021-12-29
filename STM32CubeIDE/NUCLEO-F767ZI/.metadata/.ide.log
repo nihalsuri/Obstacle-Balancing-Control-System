@@ -1860,3 +1860,7 @@
 2021-12-29 19:06:50,008 [INFO] ApiDbMcu:468 - Load IP Config File for PDM2PCM
 2021-12-29 19:06:50,111 [INFO] OpenFileManager:333 - Restore cursor
 2021-12-29 19:36:17,782 [INFO] CheckServerUpdateThread:112 - End of CheckServer Thread
+2021-12-29 22:45:19,904 [INFO] Activator:177 - 
+
+
+2021-12-29 22:45:19,908 [INFO] Activator:178 - !SESSION log4j initialized
