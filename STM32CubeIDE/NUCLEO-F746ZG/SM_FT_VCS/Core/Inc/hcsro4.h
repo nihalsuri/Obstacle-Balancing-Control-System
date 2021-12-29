@@ -30,7 +30,7 @@ uint32_t IC_Val1 = 0;
 uint32_t IC_Val2 = 0;
 uint32_t Difference = 0;
 uint8_t Is_First_Captured = 0;  // is the first value captured ?
-uint8_t Distance  = 0;
+float Distance  = 0;
 
 /* Public function prototypes ------------------------------------------------*/
 
@@ -56,7 +56,7 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim8);
 
 /**
  * @brief Reads sensor values
- * @note Changes state of TRIG pin and enables interupt for timer
+ * @note Changes state of TRIG pin and enables interrupt for timer
  * @param[in] htim8 :  Input Capture timer handler
  * @return None
  */

@@ -2,8 +2,8 @@
   ******************************************************************************
   * @file    hcsro4.h
   * @authors  NS        Nihal.Suri@student.put.poznan.pl     MM          Maciej.Mirecki@student.put.poznan.pl
-  * @version 2.0
-  * @date    28-12-2021
+  * @version 3.0
+  * @date    29-12-2021
   * @brief   Driver for ultrasonic distance sensor with Timer Input Capture Mode: HCSRO4.
   *
   ******************************************************************************
@@ -84,6 +84,9 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim8)
 			}
 
 			Distance = Difference * .034/2;
+			if((Distance>30)){
+				Distance = 30;
+			}
 			Is_First_Captured = 0; // set it back to false
 
 			// set polarity to rising edge

@@ -4382,3 +4382,127 @@ arm-none-eabi-size   SM_FT_VCS.elf
   30840	     20	   2292	  33152	   8180	SM_FT_VCS.elf
 Finished building: default.size.stdout
  
+17:51:54 **** Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_VCS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_VCS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_VCS.elf
+ 
+arm-none-eabi-size   SM_FT_VCS.elf 
+arm-none-eabi-objdump -h -S  SM_FT_VCS.elf  > "SM_FT_VCS.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_VCS.elf  "SM_FT_VCS.bin"
+   text	   data	    bss	    dec	    hex	filename
+  30840	     20	   2292	  33152	   8180	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_VCS.bin
+ 
+Finished building: SM_FT_VCS.list
+ 
+17:53:51 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_VCS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30840	     20	   2292	  33152	   8180	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+17:58:54 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  115 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_VCS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_VCS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_VCS.elf
+ 
+arm-none-eabi-size   SM_FT_VCS.elf 
+arm-none-eabi-objdump -h -S  SM_FT_VCS.elf  > "SM_FT_VCS.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_VCS.elf  "SM_FT_VCS.bin"
+   text	   data	    bss	    dec	    hex	filename
+  30840	     20	   2292	  33152	   8180	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_VCS.bin
+ 
+Finished building: SM_FT_VCS.list
+ 
+18:21:26 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_VCS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30840	     20	   2292	  33152	   8180	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+18:24:43 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_VCS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_VCS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_VCS.elf
+ 
+arm-none-eabi-size   SM_FT_VCS.elf 
+arm-none-eabi-objdump -h -S  SM_FT_VCS.elf  > "SM_FT_VCS.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_VCS.elf  "SM_FT_VCS.bin"
+   text	   data	    bss	    dec	    hex	filename
+  30856	     20	   2292	  33168	   8190	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_VCS.bin
+ 
+Finished building: SM_FT_VCS.list
+ 
+18:24:55 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_VCS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30856	     20	   2292	  33168	   8190	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+18:27:23 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_VCS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_VCS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_VCS.elf
+ 
+arm-none-eabi-size   SM_FT_VCS.elf 
+arm-none-eabi-objdump -h -S  SM_FT_VCS.elf  > "SM_FT_VCS.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_VCS.elf  "SM_FT_VCS.bin"
+   text	   data	    bss	    dec	    hex	filename
+  30964	     20	   2292	  33276	   81fc	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_VCS.bin
+ 
+Finished building: SM_FT_VCS.list
+ 
+18:27:32 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_VCS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30964	     20	   2292	  33276	   81fc	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+18:32:34 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_VCS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_VCS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_VCS.elf
+ 
+arm-none-eabi-size   SM_FT_VCS.elf 
+arm-none-eabi-objdump -h -S  SM_FT_VCS.elf  > "SM_FT_VCS.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_VCS.elf  "SM_FT_VCS.bin"
+   text	   data	    bss	    dec	    hex	filename
+  30964	     20	   2292	  33276	   81fc	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_VCS.bin
+ 
+Finished building: SM_FT_VCS.list
+ 
+18:32:41 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_VCS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30964	     20	   2292	  33276	   81fc	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 

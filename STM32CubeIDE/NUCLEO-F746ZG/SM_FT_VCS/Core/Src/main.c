@@ -113,7 +113,7 @@ int main(void)
   while (1)
   {
 	  HCSRO4_Read(&htim8);
-	  HAL_Delay(100);
+	  HAL_Delay(50);
 
     /* USER CODE END WHILE */
 

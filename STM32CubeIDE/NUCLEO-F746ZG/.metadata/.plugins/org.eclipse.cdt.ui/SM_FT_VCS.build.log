@@ -1,10 +1,10 @@
-00:11:42 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+18:32:41 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
 make -j12 all 
 arm-none-eabi-size   SM_FT_VCS.elf 
    text	   data	    bss	    dec	    hex	filename
-  30840	     20	   2292	  33152	   8180	SM_FT_VCS.elf
+  30964	     20	   2292	  33276	   81fc	SM_FT_VCS.elf
 Finished building: default.size.stdout
  
 
-00:11:43 Build Finished. 0 errors, 0 warnings. (took 836ms)
+18:32:42 Build Finished. 0 errors, 0 warnings. (took 326ms)
 
