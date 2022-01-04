@@ -644,3 +644,45 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-12-29 22:45:23.903
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-01-04 22:47:53.352 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-01-04 22:48:05.609
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-01-04 22:48:05.671
+!MESSAGE Log4j initialized with config file C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F767ZI\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-01-04 22:48:15.495
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2022-01-04 22:53:55.072
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 96000000; div: 48
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 4 0 2022-01-04 22:53:56.110
+!MESSAGE SWV Client received I/O Exception: Connection reset... trying to reconnect
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 4 0 2022-01-04 22:53:58.144
+!MESSAGE SWVClient - Failed to connect to Host: localhost Port: 61235
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 4 0 2022-01-04 22:53:58.144
+!MESSAGE Failed to reconnect and read data
+!STACK 0
+java.net.ConnectException: Connection refused: connect
+	at java.base/java.net.PlainSocketImpl.connect0(Native Method)
+	at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:101)
+	at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+	at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+	at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.base/java.net.Socket.connect(Socket.java:609)
+	at java.base/java.net.Socket.connect(Socket.java:558)
+	at java.base/java.net.Socket.<init>(Socket.java:454)
+	at java.base/java.net.Socket.<init>(Socket.java:231)
+	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.connect(SWVClient.java:166)
+	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.getNextByte(SWVClient.java:279)
+	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:308)
