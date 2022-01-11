@@ -48,7 +48,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint8_t duty=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -101,27 +101,56 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 25);
-	  HAL_Delay(1000);
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 125);
-	  HAL_Delay(2000);
-
-
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 100);
-
-
-	  for(uint8_t i=0; i<10; i++)
-	  {
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 100);
-	  HAL_Delay(100);
 	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
-	  HAL_Delay(100);
-	  }
+
+//	  for(uint8_t i=75; i< 125;i+=2){
+//		  duty=i;
+//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+//
+//	  HAL_Delay(1000);
+//	  }
+
+//         HAL_Delay(5000);
+//	  	  for(uint8_t i=75; i< 121;i+=3){
+//	  		  duty=i;
+//	  	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+//
+//	  	  HAL_Delay(1000);
+//	  	  }
+	  	  //26,5cm from main hinge to the shaft of the servo
+	  	  //height 7.4
+	  	  //8 - 8,5
+
+	  HAL_Delay(3000);
+
+	  //Down is +
+	  // Up is -
+
+	  for(uint8_t i=58; i< 86;i+=1){
+	 	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+
+	 	  HAL_Delay(500);
+	 	  }
+//RANGE from 58(top0 to 86(bottom)
+
+//	  for(uint8_t i=125; i > 75;i-=5){
+//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+//
+//	  HAL_Delay(500);
+//	  }
 
 
-	  HAL_Delay(2000);
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 25);
+//	  for(uint8_t i=0; i<10; i++)
+//	  {
+//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 100);
+//	  HAL_Delay(100);
+//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
+//	  HAL_Delay(100);
+//	  }
+
+
+//	  HAL_Delay(2000);
+//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 25);
 
 
 
