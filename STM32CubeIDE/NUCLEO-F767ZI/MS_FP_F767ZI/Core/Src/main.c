@@ -48,7 +48,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint8_t duty=0;
+int duty=0;
+char msg[100];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -101,7 +102,26 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
+	  //Home position ~73
+	  //Max up ~42
+	  //Max down ~90
+	  if (HAL_UART_Receive(&huart3, (uint8_t *) msg, 12, HAL_MAX_DELAY) == HAL_OK){
+		  sscanf(msg, "DUTY_SET=%d", &duty);
+		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, duty);
+		  int n = sprintf(msg, "Duty was set to %d\r\n", duty);
+	  	  HAL_UART_Transmit(&huart3, (uint8_t *) msg, n, HAL_MAX_DELAY);
+
+	  }
+
+//	  if(HAL_UART_Receive(&huart3, (uint8_t*)msg, 1, 100)== HAL_OK)
+//	  {
+//		  sscanf(msg, "%u", &duty);
+//		  int n = strlen(msg);
+//		  HAL_UART_Transmit(&huart3, (uint8_t*)msg, n, 100);
+//	  }
+	//  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
+	 // HAL_Delay(15000);
+
 
 //	  for(uint8_t i=75; i< 125;i+=2){
 //		  duty=i;
@@ -121,16 +141,36 @@ int main(void)
 	  	  //height 7.4
 	  	  //8 - 8,5
 
-	  HAL_Delay(3000);
+	 // HAL_Delay(3000);
 
 	  //Down is +
 	  // Up is -
 
-	  for(uint8_t i=58; i< 86;i+=1){
-	 	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 60);
+//	  for(uint8_t i=75; i>50;i-=1){
+//	 	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+//
+//	 	  HAL_Delay(500);
+//	 	  }
+//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
+//
+//	  for(uint8_t i=75; i> 65;i-=1){
+//	 	 	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+//
+//	 	 	  HAL_Delay(500);
+//	 	 	  }
 
-	 	  HAL_Delay(500);
-	 	  }
+
+//	  for(uint8_t i =90; i>60; i-=1){
+//		  	 	 	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+//
+//		  	 	 	  HAL_Delay(500);
+//
+//	  }
+
+
+
+
 //RANGE from 58(top0 to 86(bottom)
 
 //	  for(uint8_t i=125; i > 75;i-=5){
@@ -140,12 +180,10 @@ int main(void)
 //	  }
 
 
-//	  for(uint8_t i=0; i<10; i++)
+//	  for(uint8_t i=55; i<97; i++)
 //	  {
-//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 100);
-//	  HAL_Delay(100);
-//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
-//	  HAL_Delay(100);
+//	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, i);
+//	  HAL_Delay(300);
 //	  }
 
 
