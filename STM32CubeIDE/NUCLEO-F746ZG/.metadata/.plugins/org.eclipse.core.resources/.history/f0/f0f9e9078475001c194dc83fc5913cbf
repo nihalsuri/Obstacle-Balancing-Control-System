@@ -84,8 +84,8 @@ void HAL_TIM_IC_CaptureCallback(TIM_HandleTypeDef *htim8)
 			}
 
 			Distance = Difference * .034/2;
-			if((Distance>40)){
-				Distance = 40;
+			if((Distance>30)){
+				Distance = 30;
 			}
 			Is_First_Captured = 0; // set it back to false
 
