@@ -13,9 +13,10 @@ alpha = 0;  % beam angle (radians)
 theta = 0;  % servo angle (radians)
 
 % TRANSFER FUNCTION
-num = m*g*d; 
-den = [L*((J/R^2) + m) 0 0]; 
-Gs = tf(num, den) % [m/rad]
+% s = tf('s');
+
+% Gs = -m*g*d/L/(J/R^2+m)/s^2
+Gs = tf(m*g*d, )
 
 % STATE SPACE REPRESENTATION
 H = -m*g/(J/(R^2)+m);
@@ -24,8 +25,3 @@ B = [0 0 0 1]';
 C = [1 0 0 0];
 D = [0];
 ball_ss = ss(A,B,C,D)
-
-
-
-
-
