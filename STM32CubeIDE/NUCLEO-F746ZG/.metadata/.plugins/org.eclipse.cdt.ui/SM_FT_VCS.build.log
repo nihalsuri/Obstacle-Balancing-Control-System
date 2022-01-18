@@ -1,10 +1,24 @@
-00:04:56 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+11:09:48 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:118:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  118 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_VCS.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_VCS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_VCS.elf
+ 
 arm-none-eabi-size   SM_FT_VCS.elf 
+arm-none-eabi-objdump -h -S  SM_FT_VCS.elf  > "SM_FT_VCS.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_VCS.elf  "SM_FT_VCS.bin"
    text	   data	    bss	    dec	    hex	filename
-  30968	     20	   2292	  33280	   8200	SM_FT_VCS.elf
+  31504	     20	   2300	  33824	   8420	SM_FT_VCS.elf
 Finished building: default.size.stdout
  
+Finished building: SM_FT_VCS.bin
+ 
+Finished building: SM_FT_VCS.list
+ 
 
-00:04:56 Build Finished. 0 errors, 0 warnings. (took 370ms)
+11:09:50 Build Finished. 0 errors, 1 warnings. (took 2s.438ms)
 

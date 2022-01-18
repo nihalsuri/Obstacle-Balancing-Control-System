@@ -50,7 +50,8 @@
 
 /* USER CODE BEGIN PV */
 
-
+float d = 0;
+extern float Distance;
 
 /* USER CODE END PV */
 
@@ -105,6 +106,8 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   HAL_TIM_IC_Start_IT(&htim8, TIM_CHANNEL_1); // captures pulses
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1); // servo control
+
 
   /* USER CODE END 2 */
 
@@ -114,6 +117,7 @@ int main(void)
   {
 	  HCSRO4_Read(&htim8);
 	  HAL_Delay(50);
+	  d = Distance;
 
     /* USER CODE END WHILE */
 

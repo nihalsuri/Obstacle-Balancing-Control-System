@@ -1,20 +1,10 @@
-00:59:30 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+11:08:14 **** Build of configuration Debug for project SM_FT_DL ****
 make -j12 all 
-arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
-arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: SM_FT_DL.elf
- 
 arm-none-eabi-size   SM_FT_DL.elf 
-arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
-arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
    text	   data	    bss	    dec	    hex	filename
   32452	     20	   2300	  34772	   87d4	SM_FT_DL.elf
 Finished building: default.size.stdout
  
-Finished building: SM_FT_DL.bin
- 
-Finished building: SM_FT_DL.list
- 
 
-00:59:31 Build Finished. 0 errors, 0 warnings. (took 1s.238ms)
+11:08:14 Build Finished. 0 errors, 0 warnings. (took 560ms)
 
