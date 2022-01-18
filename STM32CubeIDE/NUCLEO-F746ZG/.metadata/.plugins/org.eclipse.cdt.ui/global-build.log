@@ -4530,3 +4530,1670 @@ arm-none-eabi-size   SM_FT_VCS.elf
   30968	     20	   2292	  33280	   8200	SM_FT_VCS.elf
 Finished building: default.size.stdout
  
+18:51:14 **** Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m7 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f746zgtx.d" -MT"Core/Startup/startup_stm32f746zgtx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f746zgtx.o" "../Core/Startup/startup_stm32f746zgtx.s"
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f7xx.d" -MT"Core/Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f7xx.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:112:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  112 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  30968	     20	   2292	  33280	   8200	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+18:52:30 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  30968	     20	   2292	  33280	   8200	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+18:52:59 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30968	     20	   2292	  33280	   8200	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+19:15:10 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_spi_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.d" -MT"Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.o"
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/i2c.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/i2c.d" -MT"Core/Src/i2c.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/i2c.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f7xx_hal_msp.d" -MT"Core/Src/stm32f7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f7xx_it.d" -MT"Core/Src/stm32f7xx_it.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f7xx.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f7xx.d" -MT"Core/Src/system_stm32f7xx.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f7xx.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  31820	     20	   2292	  34132	   8554	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+19:17:49 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32364	     20	   2292	  34676	   8774	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+19:21:40 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32364	     20	   2292	  34676	   8774	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+19:24:22 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32364	     20	   2292	  34676	   8774	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+19:24:45 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32364	     20	   2292	  34676	   8774	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+19:25:46 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:02:01 **** Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:03:55 **** Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_VCS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30968	     20	   2292	  33280	   8200	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+00:04:56 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_VCS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30968	     20	   2292	  33280	   8200	SM_FT_VCS.elf
+Finished building: default.size.stdout
+ 
+00:08:02 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  31820	     20	   2292	  34132	   8554	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:08:27 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31820	     20	   2292	  34132	   8554	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:08:57 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31820	     20	   2292	  34132	   8554	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:10:30 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:10:37 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:11:30 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  31820	     20	   2292	  34132	   8554	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:13:21 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:13:28 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:14:15 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32336	     20	   2292	  34648	   8758	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:14:21 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32336	     20	   2292	  34648	   8758	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:15:02 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32336	     20	   2292	  34648	   8758	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:15:08 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32336	     20	   2292	  34648	   8758	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:17:17 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:116:7: error: 'Distance' undeclared (first use in this function)
+  116 |    if(Distance<5){
+      |       ^~~~~~~~
+../Core/Src/main.c:116:7: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:18:35 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32336	     20	   2292	  34648	   8758	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:19:25 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:116:7: warning: implicit declaration of function 'distGetter' [-Wimplicit-function-declaration]
+  116 |    if(distGetter()<5){
+      |       ^~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32400	     20	   2292	  34712	   8798	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:19:49 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32400	     20	   2292	  34712	   8798	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:20:00 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32400	     20	   2292	  34712	   8798	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:21:06 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:21:14 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:22:59 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32280	     20	   2292	  34592	   8720	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:23:07 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32280	     20	   2292	  34592	   8720	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:23:40 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32360	     20	   2292	  34672	   8770	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:23:46 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32360	     20	   2292	  34672	   8770	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:24:38 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32384	     20	   2292	  34696	   8788	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:24:49 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32384	     20	   2292	  34696	   8788	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:26:50 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32352	     20	   2292	  34664	   8768	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:27:03 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32352	     20	   2292	  34664	   8768	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:27:47 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32352	     20	   2292	  34664	   8768	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:27:52 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32352	     20	   2292	  34664	   8768	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:28:41 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32384	     20	   2292	  34696	   8788	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:28:47 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32384	     20	   2292	  34696	   8788	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:29:48 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32376	     20	   2292	  34688	   8780	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:30:53 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:31:39 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:113:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  113 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:33:21 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32388	     20	   2292	  34700	   878c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:35:16 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:11: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    dist = HCSRO4_Read(&htim8);
+      |           ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32432	     20	   2300	  34752	   87c0	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:35:29 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32432	     20	   2300	  34752	   87c0	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:36:12 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32432	     20	   2300	  34752	   87c0	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:37:17 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:11: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    dist = HCSRO4_Read(&htim8);
+      |           ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32440	     20	   2300	  34760	   87c8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:37:22 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32440	     20	   2300	  34760	   87c8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:38:43 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32372	     20	   2292	  34684	   877c	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:43:07 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:116:15: warning: implicit declaration of function 'distGetter' [-Wimplicit-function-declaration]
+  116 |    distance = distGetter();
+      |               ^~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32456	     20	   2300	  34776	   87d8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:43:23 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32456	     20	   2300	  34776	   87d8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:44:16 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32456	     20	   2300	  34776	   87d8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:45:12 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o: in function `main':
+C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Src/main.c:116: undefined reference to `distGetter'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: SM_FT_DL.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:45:45 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32364	     20	   2292	  34676	   8774	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:45:50 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32364	     20	   2292	  34676	   8774	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:45:54 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32364	     20	   2292	  34676	   8774	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:47:16 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32364	     20	   2292	  34676	   8774	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:47:32 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32364	     20	   2292	  34676	   8774	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:51:10 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:406,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:30,
+                 from ../Core/Inc/hcsro4.h:18,
+                 from ../Core/Src/hcsro4.c:13:
+../Core/Src/hcsro4.c: In function 'ServoMove':
+../Core/Src/hcsro4.c:121:27: error: 'htim2' undeclared (first use in this function)
+  121 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 30);
+      |                           ^~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:41: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                         ^~~~~~~~~~
+../Core/Src/hcsro4.c:121:27: note: each undeclared identifier is reported only once for each function it appears in
+  121 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 30);
+      |                           ^~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:41: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                         ^~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:116:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  116 |    ServoMove();
+      |    ^~~~~~~~~
+make: *** [Core/Src/subdir.mk:58: Core/Src/hcsro4.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:52:34 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:406,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:30,
+                 from ../Core/Inc/hcsro4.h:18,
+                 from ../Core/Src/hcsro4.c:13:
+../Core/Src/hcsro4.c: In function 'ServoMove':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:121:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  121 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 30);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1536:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1536 |    ((__CHANNEL__) == TIM_CHANNEL_2) ? ((__HANDLE__)->Instance->CCR2 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:121:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  121 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 30);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1537:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1537 |    ((__CHANNEL__) == TIM_CHANNEL_3) ? ((__HANDLE__)->Instance->CCR3 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:121:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  121 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 30);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1538:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1538 |    ((__CHANNEL__) == TIM_CHANNEL_4) ? ((__HANDLE__)->Instance->CCR4 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:121:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  121 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 30);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:116:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  116 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1539:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1539 |    ((__CHANNEL__) == TIM_CHANNEL_5) ? ((__HANDLE__)->Instance->CCR5 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:121:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  121 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 30);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1540:17: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1540 |    ((__HANDLE__)->Instance->CCR6 = (__COMPARE__)))
+      |                 ^~
+../Core/Src/hcsro4.c:121:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  121 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 30);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:125:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  125 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 90);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1536:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1536 |    ((__CHANNEL__) == TIM_CHANNEL_2) ? ((__HANDLE__)->Instance->CCR2 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:125:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  125 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 90);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1537:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1537 |    ((__CHANNEL__) == TIM_CHANNEL_3) ? ((__HANDLE__)->Instance->CCR3 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:125:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  125 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 90);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1538:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1538 |    ((__CHANNEL__) == TIM_CHANNEL_4) ? ((__HANDLE__)->Instance->CCR4 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:125:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  125 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 90);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1539:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1539 |    ((__CHANNEL__) == TIM_CHANNEL_5) ? ((__HANDLE__)->Instance->CCR5 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:125:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  125 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 90);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1540:17: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1540 |    ((__HANDLE__)->Instance->CCR6 = (__COMPARE__)))
+      |                 ^~
+../Core/Src/hcsro4.c:125:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  125 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 90);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:129:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  129 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1536:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1536 |    ((__CHANNEL__) == TIM_CHANNEL_2) ? ((__HANDLE__)->Instance->CCR2 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:129:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  129 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1537:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1537 |    ((__CHANNEL__) == TIM_CHANNEL_3) ? ((__HANDLE__)->Instance->CCR3 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:129:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  129 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1538:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1538 |    ((__CHANNEL__) == TIM_CHANNEL_4) ? ((__HANDLE__)->Instance->CCR4 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:129:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  129 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1539:52: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1539 |    ((__CHANNEL__) == TIM_CHANNEL_5) ? ((__HANDLE__)->Instance->CCR5 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/hcsro4.c:129:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  129 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1540:17: error: 'htim2' is a pointer; did you mean to use '->'?
+ 1540 |    ((__HANDLE__)->Instance->CCR6 = (__COMPARE__)))
+      |                 ^~
+../Core/Src/hcsro4.c:129:4: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  129 |    __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 75);
+      |    ^~~~~~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:58: Core/Src/hcsro4.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:53:12 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32448	     20	   2292	  34760	   87c8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:53:32 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32448	     20	   2292	  34760	   87c8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:53:45 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32448	     20	   2292	  34760	   87c8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:55:31 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:116:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  116 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32412	     20	   2292	  34724	   87a4	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:55:37 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32412	     20	   2292	  34724	   87a4	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:56:19 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32448	     20	   2292	  34760	   87c8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:56:25 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32448	     20	   2292	  34760	   87c8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:56:29 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32448	     20	   2292	  34760	   87c8	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:58:49 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:58:54 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+01:02:07 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+01:02:18 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:114:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  114 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:116:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  116 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+02:04:15 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+02:04:37 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+23:56:00 **** Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/hcsro4.c:13:
+../Core/Inc/hcsro4.h:31:17: warning: 'Difference' initialized and declared 'extern'
+   31 | extern uint32_t Difference = 0;
+      |                 ^~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:74:15: error: 'Distance' undeclared (first use in this function); did you mean 'distance'?
+   74 |  float dist = Distance;
+      |               ^~~~~~~~
+      |               distance
+../Core/Src/main.c:74:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:115:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  115 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:117:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  117 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+../Core/Src/main.c:74:8: warning: unused variable 'dist' [-Wunused-variable]
+   74 |  float dist = Distance;
+      |        ^~~~
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:56:26 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/hcsro4.c:13:
+../Core/Inc/hcsro4.h:33:14: warning: 'Distance' initialized and declared 'extern'
+   33 | extern float Distance  = 0;
+      |              ^~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:74:15: error: 'Distance' undeclared (first use in this function); did you mean 'distance'?
+   74 |  float dist = Distance;
+      |               ^~~~~~~~
+      |               distance
+../Core/Src/main.c:74:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:115:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  115 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:117:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  117 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+../Core/Src/main.c:74:8: warning: unused variable 'dist' [-Wunused-variable]
+   74 |  float dist = Distance;
+      |        ^~~~
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:56:32 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:74:15: error: 'Distance' undeclared (first use in this function); did you mean 'distance'?
+   74 |  float dist = Distance;
+      |               ^~~~~~~~
+      |               distance
+../Core/Src/main.c:74:15: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:115:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  115 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:117:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  117 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+../Core/Src/main.c:74:8: warning: unused variable 'dist' [-Wunused-variable]
+   74 |  float dist = Distance;
+      |        ^~~~
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:57:30 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:115:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  115 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:117:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  117 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+../Core/Src/main.c:118:15: error: 'Distance' undeclared (first use in this function); did you mean 'distance'?
+  118 |    distance = Distance;
+      |               ^~~~~~~~
+      |               distance
+../Core/Src/main.c:118:15: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:58:40 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:32:
+../Core/Inc/hcsro4.h:33:14: warning: 'Distance' initialized and declared 'extern'
+   33 | extern float Distance  = 0;
+      |              ^~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:29: multiple definition of `IC_Val1'; ./Core/Src/hcsro4.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:29: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:30: multiple definition of `IC_Val2'; ./Core/Src/hcsro4.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:30: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:31: multiple definition of `Difference'; ./Core/Src/hcsro4.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:31: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:32: multiple definition of `Is_First_Captured'; ./Core/Src/hcsro4.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:32: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:33: multiple definition of `Distance'; ./Core/Src/hcsro4.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:33: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: SM_FT_DL.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:58:51 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  116 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:118:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  118 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+../Core/Src/main.c:119:15: error: 'Distance' undeclared (first use in this function); did you mean 'distance'?
+  119 |    distance = Distance;
+      |               ^~~~~~~~
+      |               distance
+../Core/Src/main.c:119:15: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:59:06 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  116 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:118:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  118 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+../Core/Src/main.c:119:15: error: 'Distance' undeclared (first use in this function); did you mean 'distance'?
+  119 |    distance = Distance;
+      |               ^~~~~~~~
+      |               distance
+../Core/Src/main.c:119:15: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:58: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+23:59:13 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  116 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:118:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  118 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+23:59:24 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+In file included from ../Core/Src/hcsro4.c:13:
+../Core/Inc/hcsro4.h:33:14: warning: 'Distance' initialized and declared 'extern'
+   33 | extern float Distance  = 0;
+      |              ^~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+23:59:46 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:01:47 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  116 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:118:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  118 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:03:02 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:29: multiple definition of `IC_Val1'; ./Core/Src/hcsro4.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:29: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:30: multiple definition of `IC_Val2'; ./Core/Src/hcsro4.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:30: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:31: multiple definition of `Difference'; ./Core/Src/hcsro4.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:31: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:32: multiple definition of `Is_First_Captured'; ./Core/Src/hcsro4.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:32: first defined here
+c:\st\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: ./Core/Src/main.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:33: multiple definition of `Distance'; ./Core/Src/hcsro4.o:C:/Users/Nihal/Desktop/sem5/msLec/FINAL_PROJECT/Debug/../Core/Inc/hcsro4.h:33: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: SM_FT_DL.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+00:04:12 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:116:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  116 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:118:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  118 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32436	     20	   2292	  34748	   87bc	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:06:15 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:118:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  118 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:120:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  120 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32452	     20	   2300	  34772	   87d4	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:06:34 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:118:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  118 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:120:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  120 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32452	     20	   2300	  34772	   87d4	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:07:52 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32452	     20	   2300	  34772	   87d4	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:09:18 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32452	     20	   2300	  34772	   87d4	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:09:24 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-size   SM_FT_DL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32452	     20	   2300	  34772	   87d4	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+00:20:02 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:118:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  118 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:120:4: warning: implicit declaration of function 'ServoMove' [-Wimplicit-function-declaration]
+  120 |    ServoMove(&htim2);
+      |    ^~~~~~~~~
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32452	     20	   2300	  34772	   87d4	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
+00:59:30 **** Incremental Build of configuration Debug for project SM_FT_DL ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/hcsro4.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/hcsro4.d" -MT"Core/Src/hcsro4.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/hcsro4.o"
+arm-none-eabi-gcc -o "SM_FT_DL.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\Nihal\Desktop\sem5\msLec\FINAL_PROJECT\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_DL.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_DL.elf
+ 
+arm-none-eabi-size   SM_FT_DL.elf 
+arm-none-eabi-objdump -h -S  SM_FT_DL.elf  > "SM_FT_DL.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_DL.elf  "SM_FT_DL.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32452	     20	   2300	  34772	   87d4	SM_FT_DL.elf
+Finished building: default.size.stdout
+ 
+Finished building: SM_FT_DL.bin
+ 
+Finished building: SM_FT_DL.list
+ 
