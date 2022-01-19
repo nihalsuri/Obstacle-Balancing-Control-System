@@ -7,6 +7,7 @@
 #include <QSerialPortInfo>
 #include <QTextStream>
 #include <algorithm>
+#include <string>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -21,7 +22,7 @@ public:
     void addPoint(double x, double y);
     void clearPlot();
     void plot();
-
+    float x_axis_val=0.0f;
 private slots:
     void serialReceived();
 

@@ -44,8 +44,13 @@ MainWindow::MainWindow(QWidget *parent)
     ui->stop_bits_combo->addItem("1");
 
     ui->plot->addGraph();
-    ui->plot->graph(0)->setScatterStyle(QCPScatterStyle::ssCrossCircle);
+    ui->plot->graph(0)->setScatterStyle(QCPScatterStyle::ssCircle);
     ui->plot->graph(0)->setLineStyle(QCPGraph::lsLine);
+    ui->plot->xAxis->setLabel("x");
+    ui->plot->yAxis->setLabel("Y");
+    ui->plot->xAxis->setRange(0, 100);
+    ui->plot->yAxis->setRange(0, 40);
+    ui->plot->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom | QCP::iSelectPlottables);
 }
 MainWindow::~MainWindow()
 {
@@ -62,6 +67,7 @@ void MainWindow::clearPlot()
 {
     qv_x.clear();
     qv_y.clear();
+    x_axis_val =0;
 }
 
 void MainWindow::plot()
@@ -75,20 +81,20 @@ void MainWindow::serialReceived()
 {
     QByteArray ba;
     QString msg;
-
-    serial_port->setReadBufferSize(15);
+    serial_port->setReadBufferSize(0);
     ba = serial_port->readAll();
-
-
 
     ui->textBrowser->setText(ba);
     qDebug()<<ba;
 
+    float y_val = 0.0;
+    std::string str(ba, sizeof(ba));
+    y_val = std::stof(str);
 
-    //float val1=0.0, val2=0.0;
-   // sscanf(ba, "%f,%f", val1, val2);
-   // qv_x.append(val1);
-   // qv_y.append(val2);
+    qv_x.append(x_axis_val);
+    qv_y.append(y_val);
+    plot();
+    x_axis_val+=0.01;
 
 
 
