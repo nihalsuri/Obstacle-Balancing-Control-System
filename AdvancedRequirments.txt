@@ -1,0 +1,6 @@
+5. Desktop App
+6. LCD Setup
+7. RED :ERROR(30%), BLUE: ERROR(5%), GREEN: ERROR(1%)
+8. Tuniing PID values with ENCODER
+9. FreeRTOS
+10. TCP

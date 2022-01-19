@@ -1,0 +1,7 @@
+1. Place the sensor in such a way that the readings are accurate
+You sent
+2. Find obstacle that works with sensor
+You sent
+3. Transfer function and PID gains calculation in MATLAB
+You sent
+4. CMSIS in CubeIDE for proper control

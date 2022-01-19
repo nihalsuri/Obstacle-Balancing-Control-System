@@ -30,6 +30,11 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+#include "arm_math.h"
+#include "lcd_config.h"
+#include "string.h"
+#include "stdio.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -50,7 +55,32 @@
 
 /* USER CODE BEGIN PV */
 
+float d = 0;
+extern float Distance;
 
+char dist[] = "POSITION : ";
+char setpoint[] = "SETPOINT : ";
+char duty_LCD[] = "DUTY: ";
+char cm[] = " cm";
+int HomePosition = 73;
+
+char pos_dist[10];
+char set[10];
+char duty_print[10];
+
+int Kp=1.0, Ki=0.0;
+float32_t kkp = 1.0;
+float32_t kki = 0;
+
+int duty=73; //only for calibration
+char msg[]={}; //only for calibration
+
+
+
+uint32_t SETPOINT = 15;
+uint32_t duty_val = 0;
+float32_t SWV_VAR = 0;
+float32_t error = 0;
 
 /* USER CODE END PV */
 
@@ -105,6 +135,13 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   HAL_TIM_IC_Start_IT(&htim8, TIM_CHANNEL_1); // captures pulses
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1); // servo control
+  LCD_Init(&hlcd1); // initialize LCD
+
+  //arm_pid_instance_f32 pid = {. Kp = kkp , . Kd = 0 , . Ki = kki}; // pid control CMSIS
+
+
+
 
   /* USER CODE END 2 */
 
@@ -112,8 +149,95 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  //Sensor
 	  HCSRO4_Read(&htim8);
-	  HAL_Delay(50);
+	  HAL_Delay(30);
+	  d = Distance;
+
+
+
+//	  // ALGORITHM
+	  if((d > 14.5) && (d < 15.5)){
+	  	  duty_val = HomePosition;
+	  }
+	  else{
+
+	  if((d > 15.5) && (d < 19)){
+		  duty_val = HomePosition-6;
+	  }
+
+	  else if((d > 19.1) && (d < 22.6)){
+		  duty_val = HomePosition-7;
+	  }
+
+	  else if((d > 22.7) && (d < 26.2)){
+		  duty_val = HomePosition-10;
+	  }
+
+	  else if((d > 26.3) && (d < 30)){
+	  	  duty_val = HomePosition-12;
+	  }
+
+	  //Going Down
+
+	  else if((d > 10.9) && (d < 14.4)){
+		  duty_val = HomePosition+7;
+	  }
+
+	  else if((d > 7.3) && (d < 10.8)){
+		  duty_val = HomePosition+10;
+	  }
+
+	  else if((d > 5) && (d < 7.2)){
+	  	  duty_val = HomePosition+13;
+	  }
+
+	  }
+	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, duty_val);
+	  HAL_Delay(150);
+
+	  //// ALGORITHM
+
+
+
+	  //LCD
+	  sprintf(pos_dist, "%.02f", d-1);
+	  sprintf(duty_print, "%d", duty_val);
+
+	  LCD_SetCursor(&hlcd1, 0, 0);
+	  LCD_printStr(&hlcd1, dist);
+	  LCD_printStr(&hlcd1, pos_dist);
+	  LCD_printStr(&hlcd1, cm);
+	  LCD_SetCursor(&hlcd1, 1, 0);
+	  LCD_printStr(&hlcd1, duty_LCD);
+	  LCD_printStr(&hlcd1, duty_print);
+	  LCD_printStr(&hlcd1, cm);
+
+	  //UART communication for calibration*****
+//	  if (HAL_UART_Receive(&huart3, (uint8_t *) msg, 12, HAL_MAX_DELAY) == HAL_OK){
+//	  		  sscanf(msg, "DUTY_SET=%d", &duty);  // DUTY_SET=073
+//	  		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, duty);
+//	  		  int n = sprintf(msg, "Duty was set to %d\r\n", duty);
+//	  	  	  HAL_UART_Transmit(&huart3, (uint8_t *) msg, n, HAL_MAX_DELAY);
+//
+//	  	  }
+
+	  //CMSIS
+//      int m = strlen("Kp=10;Ki=10\0");
+//	  if (HAL_UART_Receive(&huart3, (uint8_t *) msg, m, HAL_MAX_DELAY) == HAL_OK){
+//	  	  	sscanf(msg, "Kp=%d;Ki=%d", &Kp, &Ki);
+//	  	  	int n = sprintf(msg, "Kp was set to: %d\r\nKi was set to: %d\r\n", Kp, Ki);
+//	  	  	HAL_UART_Transmit(&huart3, (uint8_t *) msg, n, HAL_MAX_DELAY);
+//
+//	  	  	  }
+//    kkp = (float32_t)Kp;
+//    kki = (float32_t)Ki;
+//
+//    error = (float32_t)(SETPOINT-d);
+//    SWV_VAR = arm_pid_f32(&pid, error);
+//    HAL_Delay(0);
+
+
 
     /* USER CODE END WHILE */
 
