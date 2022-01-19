@@ -80,22 +80,27 @@ void MainWindow::plot()
 void MainWindow::serialReceived()
 {
     QByteArray ba;
-    QString msg;
+    float xx, yy;
+
     serial_port->setReadBufferSize(0);
-    ba = serial_port->readAll();
+    if(serial_port->waitForReadyRead(30)){
 
-    ui->textBrowser->setText(ba);
-    qDebug()<<ba;
+        ba = serial_port->readAll();
 
-    float y_val = 0.0;
-    std::string str(ba, sizeof(ba));
-    y_val = std::stof(str);
+        ui->textBrowser->setText(ba);
 
-    qv_x.append(x_axis_val);
-    qv_y.append(y_val);
-    plot();
-    x_axis_val+=0.01;
+        std::string str(ba, strlen(ba));
+        const char *c = str.c_str();
+        std::sscanf(c, "%f, %f", &xx, &yy);
 
+        qv_x.append(xx);
+        qv_y.append(yy);
+        plot();
+
+        qDebug()<<ba;
+        if(ba=="")
+            on_connect_button_clicked();
+    }
 
 
 
@@ -162,5 +167,11 @@ void MainWindow::on_pushButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(2);
 
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    MainWindow::close();
 }
 
