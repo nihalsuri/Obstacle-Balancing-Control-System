@@ -11,11 +11,13 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
-    qcustomplot.cpp
+    qcustomplot.cpp \
+    serialport.cpp
 
 HEADERS += \
     mainwindow.h \
-    qcustomplot.h
+    qcustomplot.h \
+    serialport.h
 
 FORMS += \
     mainwindow.ui
