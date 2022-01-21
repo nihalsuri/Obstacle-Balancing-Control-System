@@ -58,7 +58,7 @@
 float d = 0;
 extern float Distance;
 
-char dist[] = "POSITION : ";
+char dist[] = "POSITION :";
 char setpoint[] = "SETPOINT : ";
 char duty_LCD[] = "DUTY: ";
 char cm[] = " cm";
