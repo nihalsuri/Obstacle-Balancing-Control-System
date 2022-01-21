@@ -1,10 +1,30 @@
-08:16:34 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
+11:55:30 **** Incremental Build of configuration Debug for project SM_FT_VCS ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:177:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  177 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:184:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  184 |    sprintf(duty_print, "%d", duty_val);
+      |                         ~^   ~~~~~~~~
+      |                          |   |
+      |                          int uint32_t {aka long unsigned int}
+      |                         %ld
+arm-none-eabi-gcc -o "SM_FT_VCS.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Nihal\Documents\GitHub\MCU-based-Control-and-Measurement-System\STM32CubeIDE\NUCLEO-F746ZG\SM_FT_VCS\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SM_FT_VCS.map" -Wl,--gc-sections -static -L"C:\Users\Nihal\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SM_FT_VCS.elf
+ 
 arm-none-eabi-size   SM_FT_VCS.elf 
+arm-none-eabi-objdump -h -S  SM_FT_VCS.elf  > "SM_FT_VCS.list"
+arm-none-eabi-objcopy  -O binary  SM_FT_VCS.elf  "SM_FT_VCS.bin"
    text	   data	    bss	    dec	    hex	filename
-  54164	    572	   2364	  57100	   df0c	SM_FT_VCS.elf
+  55324	    608	   2448	  58380	   e40c	SM_FT_VCS.elf
 Finished building: default.size.stdout
  
+Finished building: SM_FT_VCS.bin
+ 
+Finished building: SM_FT_VCS.list
+ 
 
-08:16:34 Build Finished. 0 errors, 0 warnings. (took 662ms)
+11:55:32 Build Finished. 0 errors, 2 warnings. (took 1s.429ms)
 

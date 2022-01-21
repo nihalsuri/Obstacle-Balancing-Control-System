@@ -48,7 +48,7 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+#define LINEAR_TRANSFORM(x,amin,amax,bmin,bmax) (((x-amin)/(amax-amin))*(bmax-bmin)+bmin)
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -74,13 +74,15 @@ float32_t kki = 0;
 
 int duty=73; //only for calibration
 char msg[]={}; //only for calibration
+char msg1[]={};
 
 
-
-uint32_t SETPOINT = 15;
+uint32_t SETPOINT = 14;
 uint32_t duty_val = 0;
 float32_t SWV_VAR = 0;
 float32_t error = 0;
+
+arm_pid_instance_f32 pid = {.Kp = 1.3, .Ki = 0.001, .Kd =0.0001};
 
 /* USER CODE END PV */
 
@@ -93,6 +95,27 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+//Control Algorithm
+
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef * htim){
+	if(htim->Instance == TIM3){
+
+		error = (float32_t)(SETPOINT-d);
+		SWV_VAR = arm_pid_f32(&pid, error);
+		duty_val = LINEAR_TRANSFORM(SWV_VAR, -6.9, 7.5, 55, 87);
+
+		if(duty_val <= 55){
+			duty_val = 55;
+		}
+		else if(duty_val >= 87){
+			duty_val = 87;
+		}
+
+		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, (int)duty_val);
+
+	}
+}
 
 /* USER CODE END 0 */
 
@@ -132,14 +155,15 @@ int main(void)
   MX_TIM8_Init();
   MX_ADC1_Init();
   MX_TIM5_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
   HAL_TIM_IC_Start_IT(&htim8, TIM_CHANNEL_1); // captures pulses
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1); // servo control
+  HAL_TIM_Base_Start_IT(&htim3); // control
   LCD_Init(&hlcd1); // initialize LCD
 
-  //arm_pid_instance_f32 pid = {. Kp = kkp , . Kd = 0 , . Ki = kki}; // pid control CMSIS
-
+  arm_pid_init_f32(&pid,1);
 
 
 
@@ -155,53 +179,8 @@ int main(void)
 	  d = Distance;
 
 
-
-//	  // ALGORITHM
-	  if((d > 14.5) && (d < 15.5)){
-	  	  duty_val = HomePosition;
-	  }
-	  else{
-
-	  if((d > 15.5) && (d < 19)){
-		  duty_val = HomePosition-6;
-	  }
-
-	  else if((d > 19.1) && (d < 22.6)){
-		  duty_val = HomePosition-7;
-	  }
-
-	  else if((d > 22.7) && (d < 26.2)){
-		  duty_val = HomePosition-10;
-	  }
-
-	  else if((d > 26.3) && (d < 30)){
-	  	  duty_val = HomePosition-12;
-	  }
-
-	  //Going Down
-
-	  else if((d > 10.9) && (d < 14.4)){
-		  duty_val = HomePosition+7;
-	  }
-
-	  else if((d > 7.3) && (d < 10.8)){
-		  duty_val = HomePosition+10;
-	  }
-
-	  else if((d > 5) && (d < 7.2)){
-	  	  duty_val = HomePosition+13;
-	  }
-
-	  }
-	  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, duty_val);
-	  HAL_Delay(150);
-
-	  //// ALGORITHM
-
-
-
 	  //LCD
-	  sprintf(pos_dist, "%.02f", d-1);
+	  sprintf(pos_dist, "%.02f", d);
 	  sprintf(duty_print, "%d", duty_val);
 
 	  LCD_SetCursor(&hlcd1, 0, 0);
@@ -211,7 +190,9 @@ int main(void)
 	  LCD_SetCursor(&hlcd1, 1, 0);
 	  LCD_printStr(&hlcd1, duty_LCD);
 	  LCD_printStr(&hlcd1, duty_print);
-	  LCD_printStr(&hlcd1, cm);
+	  //LCD_printStr(&hlcd1, cm);
+
+
 
 	  //UART communication for calibration*****
 //	  if (HAL_UART_Receive(&huart3, (uint8_t *) msg, 12, HAL_MAX_DELAY) == HAL_OK){
@@ -222,20 +203,12 @@ int main(void)
 //
 //	  	  }
 
-	  //CMSIS
-//      int m = strlen("Kp=10;Ki=10\0");
-//	  if (HAL_UART_Receive(&huart3, (uint8_t *) msg, m, HAL_MAX_DELAY) == HAL_OK){
-//	  	  	sscanf(msg, "Kp=%d;Ki=%d", &Kp, &Ki);
-//	  	  	int n = sprintf(msg, "Kp was set to: %d\r\nKi was set to: %d\r\n", Kp, Ki);
-//	  	  	HAL_UART_Transmit(&huart3, (uint8_t *) msg, n, HAL_MAX_DELAY);
+
+	  //APP
+//	  int n = sprintf(msg1, "%f", d);
 //
-//	  	  	  }
-//    kkp = (float32_t)Kp;
-//    kki = (float32_t)Ki;
-//
-//    error = (float32_t)(SETPOINT-d);
-//    SWV_VAR = arm_pid_f32(&pid, error);
-//    HAL_Delay(0);
+//	  HAL_UART_Transmit(&huart3, (uint8_t*) msg1, n, 100);
+
 
 
 
