@@ -1,0 +1,64 @@
+00:03:58 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'ADC_SETPOINT':
+../Core/Src/main.c:156:9: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  156 |  return abs((sample_in_1/100) - 20)+10;
+      |         ^~~
+../Core/Src/main.c:156:31: warning: 'abs' argument 1 type is 'long unsigned int' where 'int' is expected in a call to built-in function declared without prototype [-Wbuiltin-declaration-mismatch]
+  156 |  return abs((sample_in_1/100) - 20)+10;
+      |             ~~~~~~~~~~~~~~~~~~^~~~
+<built-in>: note: built-in 'abs' declared here
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:244:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  244 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c:254:26: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  254 |    sprintf(duty_print, "%d", duty_val);
+      |                         ~^   ~~~~~~~~
+      |                          |   |
+      |                          int uint32_t {aka long unsigned int}
+      |                         %ld
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:137:27: warning: '0' directive writing 1 byte into a region of size 0 [-Wformat-overflow=]
+  137 |     int n = sprintf(msg, "0%.02f, %d", d, sp);
+      |                           ^
+../Core/Src/main.c:137:26: note: assuming directive output of 4 bytes
+  137 |     int n = sprintf(msg, "0%.02f, %d", d, sp);
+      |                          ^~~~~~~~~~~~
+../Core/Src/main.c:137:13: note: 'sprintf' output between 8 and 328 bytes into a destination of size 0
+  137 |     int n = sprintf(msg, "0%.02f, %d", d, sp);
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:132:26: warning: '%.02f' directive writing between 3 and 313 bytes into a region of size 0 [-Wformat-overflow=]
+  132 |    int n = sprintf(msg, "%.02f, %d", d, sp);
+      |                          ^~~~~
+../Core/Src/main.c:132:25: note: assuming directive output of 4 bytes
+  132 |    int n = sprintf(msg, "%.02f, %d", d, sp);
+      |                         ^~~~~~~~~~~
+../Core/Src/main.c:132:12: note: 'sprintf' output between 7 and 327 bytes into a destination of size 0
+  132 |    int n = sprintf(msg, "%.02f, %d", d, sp);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:255:23: warning: 'sprintf' writing a terminating nul past the end of the destination [-Wformat-overflow=]
+  255 |    sprintf(sp_str, "%d", sp);
+      |                       ^
+../Core/Src/main.c:255:4: note: 'sprintf' output between 2 and 12 bytes into a destination of size 1
+  255 |    sprintf(sp_str, "%d", sp);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  57500	    600	   2536	  60636	   ecdc	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+
+00:03:59 Build Finished. 0 errors, 7 warnings. (took 1s.227ms)
+
