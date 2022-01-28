@@ -48,7 +48,8 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-#define LINEAR_TRANSFORM(x,amin,amax,bmin,bmax) (((x-amin)/(amax-amin))*(bmax-bmin)+bmin)
+#define LINEAR_TRANSFORM(x,amin,amax,bmin,bmax) (((x-amin)/(amax-amin))*(bmax-bmin)+bmin) // angle to duty transform
+
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -76,7 +77,6 @@ int duty=73; //only for calibration
 char msg[]={}; //only for calibration
 char msg1[]={};
 
-
 uint32_t SETPOINT = 14;
 uint32_t duty_val = 0;
 float32_t SWV_VAR = 0;
@@ -95,24 +95,24 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-//Control Algorithm
 
+// PID Control Algorithm
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef * htim){
 	if(htim->Instance == TIM3){
 
 		error = (float32_t)(SETPOINT-d);
 		SWV_VAR = arm_pid_f32(&pid, error);
-		duty_val = LINEAR_TRANSFORM(SWV_VAR, -6.9, 7.5, 55, 87);
+		duty_val = LINEAR_TRANSFORM(SWV_VAR, -6.9, 7.5, 55, 87); // angle and duty of servo relation
 
 		if(duty_val <= 55){
-			duty_val = 55;
+			duty_val = 55; // max angle
 		}
 		else if(duty_val >= 87){
-			duty_val = 87;
+			duty_val = 87; // minimum angle
 		}
 
-		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, (int)duty_val);
+		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, (int)duty_val); // set counter value
 
 	}
 }
@@ -160,11 +160,10 @@ int main(void)
 
   HAL_TIM_IC_Start_IT(&htim8, TIM_CHANNEL_1); // captures pulses
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1); // servo control
-  HAL_TIM_Base_Start_IT(&htim3); // control
+  HAL_TIM_Base_Start_IT(&htim3); // PID Control Callback 100ms sampling
   LCD_Init(&hlcd1); // initialize LCD
 
   arm_pid_init_f32(&pid,1);
-
 
 
   /* USER CODE END 2 */
