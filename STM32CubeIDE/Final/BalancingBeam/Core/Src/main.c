@@ -35,6 +35,9 @@
 #include "string.h"
 #include "stdio.h"
 #include <math.h>
+#include <ui.h>
+#include <uart_tx.h>
+
 
 /* USER CODE END Includes */
 
@@ -49,45 +52,21 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-#define LINEAR_TRANSFORM(x,amin,amax,bmin,bmax) (((x-amin)/(amax-amin))*(bmax-bmin)+bmin)
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
 
-float d = 0;
+extern float d;
 extern float Distance;
 
-char dist[] = "POSITION :";
-char setpoint[] = "SETPOINT : ";
-char duty_LCD[] = "DUTY: ";
-char cm[] = " cm";
-int HomePosition = 73;
+extern uint32_t duty_val;
+extern float32_t SWV_VAR;
+extern float32_t error;
+extern int sp;
 
-char pos_dist[10];
-char set[10];
-char duty_print[10];
-
-int Kp=1.0, Ki=0.0;
-float32_t kkp = 1.0;
-float32_t kki = 0;
-
-int duty=73; //only for calibration
-char msg[]={}; //only for calibration
-char msg1[]={};
-
-uint32_t sample_in_1 = 0;
-uint32_t SETPOINT = 14;
-uint32_t duty_val = 0;
-float32_t SWV_VAR = 0;
-float32_t error = 0;
-
-int sp=15;
-char sp_str[]="";
-_Bool led_state_b;
-//arm_pid_instance_f32 pid = {.Kp = 0.9, .Ki = 0.000147368, .Kd =0.55};
-arm_pid_instance_f32 pid = {.Kp = 1, .Ki = 0.000147368, .Kd =0.35};
+extern arm_pid_instance_f32 pid;
 
 /* USER CODE END PV */
 
@@ -101,87 +80,21 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-//Control Algorithm
+
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef * htim){
-	if(htim->Instance == TIM3){
 
-		error = (float32_t)(sp-d);
+	if(htim->Instance == TIM3)
+		pid_control(&htim2, &htim3);
 
-		SWV_VAR = arm_pid_f32(&pid, error);
-
-		duty_val = LINEAR_TRANSFORM(SWV_VAR, -6.9, 7.5, 55, 87);
-
-		if(duty_val <= 55){
-			duty_val = 55;
-		}
-		else if(duty_val >= 87){
-			duty_val = 87;
-		}
-		if(d==sp + sp*0.01 && d == sp- sp*0.01 ){
-			duty_val=73;
-			HAL_TIM_Base_Stop_IT(&htim3);
-		}
-
-
-		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, (int)duty_val);
-
-	}
 	if(htim->Instance == TIM4)
-	{
-		if(d >= 10.0){
-		 int n = sprintf(msg, "%.02f, %d", d, sp);
-		 HAL_UART_Transmit_IT(&huart3, (uint8_t*)msg,n);
-
-		}
-		else{
-			 int n = sprintf(msg, "0%.02f, %d", d, sp);
-			 HAL_UART_Transmit_IT(&huart3, (uint8_t*)msg,n);
-
-		}
-	}
+		uart_tx(&huart3);
 }
 
-//setpoint from ADC
-int ADC_SETPOINT(ADC_HandleTypeDef* hadc){
-
-	if(hadc->Instance == ADC1){
-
-	 HAL_ADC_Start(&hadc1);
-
-	 if(HAL_ADC_PollForConversion(&hadc1, 500) == HAL_OK){
-			sample_in_1 = HAL_ADC_GetValue(&hadc1);
-	  }
-	}
-
-	return abs((sample_in_1/100) - 20)+10;
-
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+{
+	if(GPIO_Pin == GPIO_PIN_13)
+	reset_beam_position(&htim2, &htim3);
 }
-
-void LCD_ROUTINE(){
-
-}
-
-void LED_ROUTINE(){
-
-	  if(fabs(error) <= 0.3){
-		  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 0);
-		  HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, 0);
-		  HAL_GPIO_WritePin(GPIOD, GPIO_PIN_7, 1);
-	 	  }
-
-	  else if( fabs(error) > 0.31 && fabs(error) < 0.6){
-	  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 0);
-	  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, 1);
-	  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_7, 0);
-	  	}
-	  else	  if( fabs(error) > 0.6){
-	  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_0, 1);
-	  		HAL_GPIO_WritePin(GPIOC, GPIO_PIN_3, 0);
-	  		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_7, 0);
-	  	}
-}
-
-
 
 /* USER CODE END 0 */
 
@@ -225,14 +138,13 @@ int main(void)
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_TIM_IC_Start_IT(&htim8, TIM_CHANNEL_1); // captures pulses
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1); // servo control
+  HAL_TIM_IC_Start_IT(&htim8, TIM_CHANNEL_1); 	// captures pulses
+  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1); 	// servo control
   HAL_TIM_Base_Start_IT(&htim3); 		// PID control
-  LCD_Init(&hlcd1); // initialize LCD
-  HAL_TIM_Base_Start_IT(&htim4); 		//UART
+  HAL_TIM_Base_Start_IT(&htim4); 	//UART
+
+  LCD_Init(&hlcd1); 	// initialize LCD
   arm_pid_init_f32(&pid,1);
-
-
 
   /* USER CODE END 2 */
 
@@ -240,66 +152,19 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  //Sensor
+	  //Sensor - distance reading
 	  HCSRO4_Read(&htim8);
 	  HAL_Delay(30);
 	  d = Distance;
 
-	  //setpoint from ADC
+	  //LEDs - indication of error
+	  led_routine();
+
+	  //LCD - printing data
+	  lcd_routine(&hlcd1);
+
+	  //ADC - setting a setpoint
 	  sp = ADC_SETPOINT(&hadc1);
-	  LED_ROUTINE();
-
-	  //LCD
-	  sprintf(pos_dist, "%.02f", d);
-	  sprintf(duty_print, "%d", duty_val);
-	  sprintf(sp_str, "%d", sp);
-	  LCD_SetCursor(&hlcd1, 0, 0);
-	  LCD_printStr(&hlcd1, dist);
-	  LCD_printStr(&hlcd1, pos_dist);
-	  LCD_printStr(&hlcd1, cm);
-	  LCD_SetCursor(&hlcd1, 1, 0);
-	  LCD_printStr(&hlcd1, "SETPOINT: ");
-	  LCD_printStr(&hlcd1, sp_str);
-	  //LCD_printStr(&hlcd1, cm);
-
-
-//	  int n = sprintf(msg, "%.02f, %d", d, sp);
-//	  HAL_UART_Transmit(&huart3, (uint8_t*)msg, n, 100);
-
-
-	  //LED ROUTINE
-
-
-
-	  //setpoint from APP
-//	  if(HAL_UART_Receive(&huart3, (uint8_t*)msg1, 11, 100) == HAL_OK)
-//	  {
-//		  sscanf(msg1, "SETPOINT=%d", &sp);
-//		  if (sp == 10){
-//			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, 1);
-//			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, 0);
-//		  }
-//		  if (sp == 20){
-//			  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, 1);
-//		  	  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_7, 0);
-//		  }
-//	  }
-
-
-
-
-
-//	  UART communication for calibration*****
-//	  if (HAL_UART_Receive(&huart3, (uint8_t *) msg, 12, HAL_MAX_DELAY) == HAL_OK){
-//	  		  sscanf(msg, "DUTY_SET=%d", &duty);  // DUTY_SET=073
-//	  		  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, duty);
-//	  		  int n = sprintf(msg, "Duty was set to %d\r\n", duty);
-//	  	  	  HAL_UART_Transmit(&huart3, (uint8_t *) msg, n, HAL_MAX_DELAY);
-//
-//	  	  }
-
-
-
 
     /* USER CODE END WHILE */
 

@@ -1,0 +1,4 @@
+ui.c:34:6:led_routine	8	static
+ui.c:60:6:reset_beam_position	16	static
+ui.c:72:6:lcd_routine	16	static
+ui.c:86:5:ADC_SETPOINT	16	static

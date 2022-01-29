@@ -1,0 +1,45 @@
+/**
+  ******************************************************************************
+  * @file    uart_tx.h
+  * @authors  NS        Nihal.Suri@student.put.poznan.pl     MM          Maciej.Mirecki@student.put.poznan.pl
+  * @version 2.0
+  * @date    28-12-2021
+  * @brief   PID control algorithm for balancing beam.
+  *
+  ******************************************************************************
+  */
+  /* Config --------------------------------------------------------------------*/
+
+/* Includes ------------------------------------------------------------------*/
+#include <main.h>
+#include <stdio.h>
+#include<string.h>
+/* Define ---------------------------------------------------------------------*/
+
+/* Macro ---------------------------------------------------------------------*/
+
+
+/* Public variables ----------------------------------------------------------*/
+char msg[] = {};
+/* Public function prototypes ------------------------------------------------*/
+
+
+/**
+ * @brief Transmitting data through UART to dedicated app.
+ * @param[in] time :  time in microseconds
+ * @param[in] htim8 :  Input Capture timer handler
+ * @return None
+ */
+void uart_tx(UART_HandleTypeDef *huart3, float distance, int setpoint){
+	if(distance >= 10.0){
+		 int n = sprintf(msg, "%.02f, %d", distance, setpoint);
+		 HAL_UART_Transmit_IT(huart3, (uint8_t*)msg,n);
+
+		}
+		else{
+			 int n = sprintf(msg, "0%.02f, %d", distance, setpoint);
+			 HAL_UART_Transmit_IT(huart3, (uint8_t*)msg,n);
+
+		}
+}
+

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;BalancingBeam/Core/Inc/led_routine.h&apos; to &apos;ui.h&apos;" description="Rename resource &apos;led_routine.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Inc/led_routine.h" name="ui.h" stamp="1643495538071" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;BalancingBeam/Core/Src/led_routine.c&apos; to &apos;ui.c&apos;" description="Rename resource &apos;led_routine.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/led_routine.c" name="ui.c" stamp="1643495545512" updateReferences="true"/>
+</session>

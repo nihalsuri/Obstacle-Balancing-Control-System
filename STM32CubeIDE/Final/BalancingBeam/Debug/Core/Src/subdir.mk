@@ -6,6 +6,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Core/Src/adc.c \
+../Core/Src/control_algorithm.c \
 ../Core/Src/dma.c \
 ../Core/Src/gpio.c \
 ../Core/Src/hcsro4.c \
@@ -20,10 +21,13 @@ C_SRCS += \
 ../Core/Src/sysmem.c \
 ../Core/Src/system_stm32f7xx.c \
 ../Core/Src/tim.c \
+../Core/Src/uart_tx.c \
+../Core/Src/ui.c \
 ../Core/Src/usart.c 
 
 OBJS += \
 ./Core/Src/adc.o \
+./Core/Src/control_algorithm.o \
 ./Core/Src/dma.o \
 ./Core/Src/gpio.o \
 ./Core/Src/hcsro4.o \
@@ -38,10 +42,13 @@ OBJS += \
 ./Core/Src/sysmem.o \
 ./Core/Src/system_stm32f7xx.o \
 ./Core/Src/tim.o \
+./Core/Src/uart_tx.o \
+./Core/Src/ui.o \
 ./Core/Src/usart.o 
 
 C_DEPS += \
 ./Core/Src/adc.d \
+./Core/Src/control_algorithm.d \
 ./Core/Src/dma.d \
 ./Core/Src/gpio.d \
 ./Core/Src/hcsro4.d \
@@ -56,6 +63,8 @@ C_DEPS += \
 ./Core/Src/sysmem.d \
 ./Core/Src/system_stm32f7xx.d \
 ./Core/Src/tim.d \
+./Core/Src/uart_tx.d \
+./Core/Src/ui.d \
 ./Core/Src/usart.d 
 
 

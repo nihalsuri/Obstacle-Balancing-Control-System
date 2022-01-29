@@ -1,0 +1,51 @@
+/**
+  ******************************************************************************
+  * @file    uart_tx.h
+  * @authors  NS        Nihal.Suri@student.put.poznan.pl     MM          Maciej.Mirecki@student.put.poznan.pl
+  * @version 2.0
+  * @date    28-12-2021
+  * @brief   PID control algorithm for balancing beam.
+  *
+  ******************************************************************************
+  */
+  /* Config --------------------------------------------------------------------*/
+
+/* Includes ------------------------------------------------------------------*/
+#include "stm32f7xx_hal.h"
+#include <math.h>
+#include <arm_math.h>
+/* Define ---------------------------------------------------------------------*/
+
+/* Macro ---------------------------------------------------------------------*/
+
+
+/* Public variables ----------------------------------------------------------*/
+float32_t error;
+/* Public function prototypes ------------------------------------------------*/
+
+
+/**
+ * @brief LED control
+ * @note green (<0.1% error) blue (0.3 - 0.5% error) red (>0.5% error)
+ * @param[in] none
+ * @return None
+ */
+void led_routine();
+
+/**
+ * @brief Triggered by USER_Btn, for calibration only
+ * @note Sets angle of beam to 0 degrees
+ * @param[in] none
+ * @return None
+ */
+void reset_beam_position();
+
+/**
+ * @brief Prints data on LCD display
+ * @note
+ * @param[in] none
+ * @return None
+ */
+void lcd_routine();
+
+

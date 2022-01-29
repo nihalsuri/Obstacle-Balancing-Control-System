@@ -38,7 +38,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Core/Inc/gpio.h \
  ../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include/arm_math.h \
  ../Drivers/CMSIS/Include/cmsis_compiler.h ../Core/Inc/lcd_config.h \
- ../Core/Inc/lcd.h
+ ../Core/Inc/lcd.h ../Core/Inc/ui.h ../Core/Inc/lcd.h \
+ ../Core/Inc/uart_tx.h
 
 ../Core/Inc/main.h:
 
@@ -133,3 +134,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/lcd_config.h:
 
 ../Core/Inc/lcd.h:
+
+../Core/Inc/ui.h:
+
+../Core/Inc/lcd.h:
+
+../Core/Inc/uart_tx.h:
