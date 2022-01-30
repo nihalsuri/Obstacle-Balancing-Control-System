@@ -31,7 +31,7 @@
 
 /**
  * @brief PID controller implementation.
- * @note delay between transmitting and receiving pulses
+ * @note calculation of duty cycle fed to servo
  * @param[in] htim2 :  servo timer handler
  * @param[in] htim3 :  pid timer handler
  * @return None
@@ -54,7 +54,6 @@ void pid_control(TIM_HandleTypeDef *htim2, TIM_HandleTypeDef *htim3){
 			duty_val=HOME_POS;
 			HAL_TIM_Base_Stop_IT(htim3);
 		}
-
 
 		__HAL_TIM_SET_COMPARE(htim2, TIM_CHANNEL_1, (int)duty_val);
 

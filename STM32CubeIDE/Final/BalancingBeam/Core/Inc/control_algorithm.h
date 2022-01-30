@@ -8,11 +8,13 @@
   *
   ******************************************************************************
   */
-  /* Config --------------------------------------------------------------------*/
+
+/* Config --------------------------------------------------------------------*/
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f7xx_hal.h"
 #include <arm_math.h>
+
 /* Define ---------------------------------------------------------------------*/
 #define LINEAR_TRANSFORM(x,amin,amax,bmin,bmax) (((x-amin)/(amax-amin))*(bmax-bmin)+bmin)
 #define DUTY_MAX 87
@@ -30,7 +32,6 @@ float32_t SWV_VAR = 0.0f;
 float32_t error = 0.0f;
 float d = 0.0f;
 int sp=10;
-//arm_pid_instance_f32 pid = {.Kp = 0.9, .Ki = 0.000147368, .Kd =0.55};
 arm_pid_instance_f32 pid = {.Kp = 1, .Ki = 0.000147368, .Kd =0.35};
 
 /* Public function prototypes ------------------------------------------------*/
@@ -38,7 +39,7 @@ arm_pid_instance_f32 pid = {.Kp = 1, .Ki = 0.000147368, .Kd =0.35};
 
 /**
  * @brief PID controller implementation.
- * @note delay between transmitting and receiving pulses
+ * @note calculation of duty cycle fed to servo
  * @param[in] htim2 :  servo timer handler
  * @param[in] htim3 :  pid timer handler
  * @return None

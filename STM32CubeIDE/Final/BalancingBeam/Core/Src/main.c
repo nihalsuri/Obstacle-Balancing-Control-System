@@ -144,7 +144,7 @@ int main(void)
   HAL_TIM_Base_Start_IT(&htim4); 	//UART
 
   LCD_Init(&hlcd1); 	// initialize LCD
-  arm_pid_init_f32(&pid,1);
+  arm_pid_init_f32(&pid,1);		//initialize PID
 
   /* USER CODE END 2 */
 

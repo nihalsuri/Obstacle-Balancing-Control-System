@@ -1,10 +1,10 @@
 /**
   ******************************************************************************
-  * @file    uart_tx.h
+  * @file    ui.h
   * @authors  NS        Nihal.Suri@student.put.poznan.pl     MM          Maciej.Mirecki@student.put.poznan.pl
   * @version 2.0
   * @date    28-12-2021
-  * @brief   PID control algorithm for balancing beam.
+  * @brief   User Interface: led control, lcd control, ADC input.
   *
   ******************************************************************************
   */
@@ -43,26 +43,28 @@ int sp;
 void led_routine();
 
 /**
- * @brief Triggered by USER_Btn, for calibration only
- * @note Sets angle of beam to 0 degrees
- * @param[in] none
+ * @brief Triggered by USER_Btn, for calibration purpose only
+ * @note Sets angle of servo to 0 degrees - default position
+ * @param[in] htim2 : timer handler for servo
+ * @param[in] htim3 : timer handler for PID control algorithm
  * @return None
  */
 void reset_beam_position(TIM_HandleTypeDef *htim2, TIM_HandleTypeDef *htim3);
 
 /**
+/**
  * @brief Prints data on LCD display
- * @note
- * @param[in] none
+ * @note printing real-time position and current setpoint
+ * @param[in] hlcd1 : lcd handler
  * @return None
  */
 void lcd_routine(LCD_HandleTypeDef* hlcd1);
 
 
 /**
- * @brief Prints data on LCD display
- * @note
- * @param[in] none
- * @return None
+ * @brief Reading ADC register value
+ * @note reading ADC register value and converting it into setpoint value
+ * @param[in] hadc : adc handler
+ * @return setpoint value in [cm]
  */
 int ADC_SETPOINT(ADC_HandleTypeDef* hadc);

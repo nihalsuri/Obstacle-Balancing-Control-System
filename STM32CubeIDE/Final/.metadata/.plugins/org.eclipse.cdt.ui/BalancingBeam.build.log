@@ -1,4 +1,4 @@
-00:13:15 **** Incremental Build of configuration Debug for project BalancingBeam ****
+00:17:14 **** Incremental Build of configuration Debug for project BalancingBeam ****
 make -j8 all 
 arm-none-eabi-size   BalancingBeam.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   BalancingBeam.elf
 Finished building: default.size.stdout
  
 
-00:13:15 Build Finished. 0 errors, 0 warnings. (took 264ms)
+00:17:15 Build Finished. 0 errors, 0 warnings. (took 339ms)
 

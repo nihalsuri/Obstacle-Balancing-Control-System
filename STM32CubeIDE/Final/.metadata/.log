@@ -1236,3 +1236,33 @@ java.net.ConnectException: Connection refused: connect
 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.connect(SWVClient.java:166)
 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.getNextByte(SWVClient.java:279)
 	at com.st.stm32cube.ide.mcu.debug.swv.core.SWVClient.run(SWVClient.java:308)
+!SESSION 2022-01-30 00:17:22.155 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-01-30 00:17:26.965
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-01-30 00:17:27.003
+!MESSAGE Log4j initialized with config file C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-01-30 00:17:35.493
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2022-01-30 17:19:14.850 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=pl_PL
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2022-01-30 17:19:23.865
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2022-01-30 17:19:23.923
+!MESSAGE Log4j initialized with config file C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2022-01-30 17:19:34.228
+!MESSAGE Started RMI Server, listening on port 41337

@@ -1,10 +1,10 @@
 /**
   ******************************************************************************
-  * @file    uart_tx.h
+  * @file    uart_tx.c
   * @authors  NS        Nihal.Suri@student.put.poznan.pl     MM          Maciej.Mirecki@student.put.poznan.pl
   * @version 2.0
   * @date    28-12-2021
-  * @brief   PID control algorithm for balancing beam.
+  * @brief   UART communication with dedicated desktop application.
   *
   ******************************************************************************
   */
@@ -25,8 +25,7 @@
 
 /**
  * @brief Transmitting data through UART to dedicated app.
- * @param[in] time :  time in microseconds
- * @param[in] htim8 :  Input Capture timer handler
+ * @param[in] huart3 : UART3 handler
  * @return None
  */
 void uart_tx(UART_HandleTypeDef *huart3){

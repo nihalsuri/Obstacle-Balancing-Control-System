@@ -1864,3 +1864,11 @@
 2022-01-29 23:34:01,358 [INFO] OpenFileManager:333 - Restore cursor
 2022-01-29 23:34:06,552 [INFO] Gpio:254 - dependency for GPIO [ADC1, I2C1, RCC, SPI4, SYS, TIM2, TIM5, TIM8, USART3]
 2022-01-29 23:34:48,115 [INFO] NvicIntPanel:96 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,2,46,597x511,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2022-01-30 00:17:27,003 [INFO] Activator:177 - 
+
+
+2022-01-30 00:17:27,003 [INFO] Activator:178 - !SESSION log4j initialized
+2022-01-30 17:19:23,924 [INFO] Activator:177 - 
+
+
+2022-01-30 17:19:23,925 [INFO] Activator:178 - !SESSION log4j initialized
