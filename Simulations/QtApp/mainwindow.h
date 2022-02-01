@@ -35,8 +35,6 @@ private slots:
 
     void on_to_page_1_button_clicked();
 
-    void on_settings_button_clicked();
-
     void on_connect_button_clicked();
 
     void on_clear_plot_button_clicked();
@@ -47,11 +45,13 @@ private slots:
 
     void on_pushButton_2_clicked();
 
-    void on_setpointSlider_valueChanged(int value);
-
     void on_save_button_clicked();
 
-    void on_pushButton_3_clicked();
+    void on_autoscroll_checkbox_stateChanged(int arg1);
+
+    void on_autoscroll_checkbox_clicked();
+
+    void on_go_settings_button_clicked();
 
 private:
     Ui::MainWindow *ui;
