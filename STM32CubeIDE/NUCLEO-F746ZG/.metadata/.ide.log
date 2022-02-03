@@ -9268,3 +9268,7 @@
 2022-01-29 17:26:48,810 [INFO] OpenFileManager:333 - Restore cursor
 2022-01-29 17:28:38,174 [INFO] I2cTimingTraitement:325 - 0x20404768
 2022-01-29 17:28:38,489 [INFO] I2cTimingTraitement:325 - 0x20404768
+2022-01-29 20:40:24,239 [INFO] Activator:177 - 
+
+
+2022-01-29 20:40:24,240 [INFO] Activator:178 - !SESSION log4j initialized
