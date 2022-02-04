@@ -13,7 +13,6 @@ An image of the entire system can be viewed in the following  photos:
 
 ![Photo](https://i.ibb.co/jHr4qjN/beam2.png)
 
-![Photo1](https://i.ibb.co/82wLt3Y/beam1.png)
 
 for more photos and videos of the in depth operation the system Click [here](https://drive.google.com/drive/folders/13yd-YHXUhJwEobwfMw7FmKKDsTUq_G1D).  
 
