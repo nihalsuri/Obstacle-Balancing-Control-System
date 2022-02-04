@@ -69,7 +69,6 @@ extern int sp;
 extern arm_pid_instance_f32 pid;
 char msg_str[]="";
 int sp_temp;
-_Bool sp_adc=1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -86,17 +85,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 	if(huart->Instance == USART3){
 	  HAL_UART_Receive_IT(&huart3, (uint8_t *) msg_str, strlen("SP:10"));
 	  sscanf(msg_str, "SP:%d", &sp_temp);
-	  if(sp_temp == 0)
-	  {
-		  sp_adc = 1;
-	  }
-	  else{
-		  if(sp_temp >10 && sp_temp < 20)
-		      sp = sp_temp;
-		  	  sp_adc = 0;
-
-	  }
-
+	  if(sp_temp >10 && sp_temp < 20)
+		  sp = sp_temp;
 	}
 
 }
@@ -107,7 +97,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef * htim){
 		pid_control(&htim2, &htim3);
 
 	if(htim->Instance == TIM4)
-		uart_tx(&huart3);
+		//uart_tx(&huart3);
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
@@ -186,7 +176,6 @@ int main(void)
 	  lcd_routine(&hlcd1);
 
 	  //ADC - setting a setpoint
-	  if(sp_adc == 1)
 	  sp = ADC_SETPOINT(&hadc1);
 
     /* USER CODE END WHILE */

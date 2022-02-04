@@ -69,7 +69,7 @@ extern int sp;
 extern arm_pid_instance_f32 pid;
 char msg_str[]="";
 int sp_temp;
-_Bool sp_adc=1;
+_Bool sp_adc;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/

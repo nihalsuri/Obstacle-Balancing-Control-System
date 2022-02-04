@@ -69,7 +69,7 @@ extern int sp;
 extern arm_pid_instance_f32 pid;
 char msg_str[]="";
 int sp_temp;
-_Bool sp_adc=1;
+_Bool sp_adc;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -92,8 +92,8 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 	  }
 	  else{
 		  if(sp_temp >10 && sp_temp < 20)
-		      sp = sp_temp;
-		  	  sp_adc = 0;
+				  sp = sp_temp;
+		  	  	  sp_adc = 0;
 
 	  }
 
