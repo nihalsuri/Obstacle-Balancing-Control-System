@@ -8,7 +8,9 @@ An unltrasonic sensor and servo motor were used for the implementation purposes.
 
 
 ## Build and Operation 
-An image of the entire system can be viewed in the following  photos: ![Photo](https://i.ibb.co/82wLt3Y/beam1.png)
+An image of the entire system can be viewed in the following  photos: 
+
+
 
 ![Photo](https://i.ibb.co/jHr4qjN/beam2.png)
 
