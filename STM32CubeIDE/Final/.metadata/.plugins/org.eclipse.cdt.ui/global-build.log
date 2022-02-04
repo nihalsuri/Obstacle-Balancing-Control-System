@@ -66,3 +66,492 @@ Finished building: BalancingBeam.bin
  
 Finished building: BalancingBeam.list
  
+09:40:17 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:38:
+../Core/Inc/ui.h:55:1: warning: "/*" within comment [-Wcomment]
+   55 | /**
+      |  
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:110:3: warning: implicit declaration of function 'pid_control' [-Wimplicit-function-declaration]
+  110 |   pid_control(&htim2, &htim3);
+      |   ^~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:181:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  181 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:38:
+../Core/Src/main.c: At top level:
+../Core/Inc/ui.h:27:6: warning: array 'sp_str' assumed to have one element
+   27 | char sp_str[];
+      |      ^~~~~~
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60892	    588	   2580	  64060	   fa3c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:41:54 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/control_algorithm.c: In function 'pid_control':
+../Core/Src/control_algorithm.c:59:2: warning: control reaches end of non-void function [-Wreturn-type]
+   59 |  }
+      |  ^
+In file included from ../Core/Src/main.c:38:
+../Core/Inc/ui.h:55:1: warning: "/*" within comment [-Wcomment]
+   55 | /**
+      |  
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:406,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:52: error: invalid type argument of '->' (have 'TIM_HandleTypeDef' {aka 'struct <anonymous>'})
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/main.c:110:3: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  110 |   __HAL_TIM_SET_COMPARE(htim2, TIM_CHANNEL_1, pid_control(&htim2, &htim3));
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:110:47: warning: implicit declaration of function 'pid_control' [-Wimplicit-function-declaration]
+  110 |   __HAL_TIM_SET_COMPARE(htim2, TIM_CHANNEL_1, pid_control(&htim2, &htim3));
+      |                                               ^~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                                        ^~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1536:52: error: invalid type argument of '->' (have 'TIM_HandleTypeDef' {aka 'struct <anonymous>'})
+ 1536 |    ((__CHANNEL__) == TIM_CHANNEL_2) ? ((__HANDLE__)->Instance->CCR2 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/main.c:110:3: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  110 |   __HAL_TIM_SET_COMPARE(htim2, TIM_CHANNEL_1, pid_control(&htim2, &htim3));
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1537:52: error: invalid type argument of '->' (have 'TIM_HandleTypeDef' {aka 'struct <anonymous>'})
+ 1537 |    ((__CHANNEL__) == TIM_CHANNEL_3) ? ((__HANDLE__)->Instance->CCR3 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/main.c:110:3: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  110 |   __HAL_TIM_SET_COMPARE(htim2, TIM_CHANNEL_1, pid_control(&htim2, &htim3));
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1538:52: error: invalid type argument of '->' (have 'TIM_HandleTypeDef' {aka 'struct <anonymous>'})
+ 1538 |    ((__CHANNEL__) == TIM_CHANNEL_4) ? ((__HANDLE__)->Instance->CCR4 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/main.c:110:3: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  110 |   __HAL_TIM_SET_COMPARE(htim2, TIM_CHANNEL_1, pid_control(&htim2, &htim3));
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1539:52: error: invalid type argument of '->' (have 'TIM_HandleTypeDef' {aka 'struct <anonymous>'})
+ 1539 |    ((__CHANNEL__) == TIM_CHANNEL_5) ? ((__HANDLE__)->Instance->CCR5 = (__COMPARE__)) :\
+      |                                                    ^~
+../Core/Src/main.c:110:3: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  110 |   __HAL_TIM_SET_COMPARE(htim2, TIM_CHANNEL_1, pid_control(&htim2, &htim3));
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1540:17: error: invalid type argument of '->' (have 'TIM_HandleTypeDef' {aka 'struct <anonymous>'})
+ 1540 |    ((__HANDLE__)->Instance->CCR6 = (__COMPARE__)))
+      |                 ^~
+../Core/Src/main.c:110:3: note: in expansion of macro '__HAL_TIM_SET_COMPARE'
+  110 |   __HAL_TIM_SET_COMPARE(htim2, TIM_CHANNEL_1, pid_control(&htim2, &htim3));
+      |   ^~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:182:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  182 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:38:
+../Core/Src/main.c: At top level:
+../Core/Inc/ui.h:27:6: warning: array 'sp_str' assumed to have one element
+   27 | char sp_str[];
+      |      ^~~~~~
+make: *** [Core/Src/subdir.mk:73: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+09:42:16 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:38:
+../Core/Inc/ui.h:55:1: warning: "/*" within comment [-Wcomment]
+   55 | /**
+      |  
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:406,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:110:48: warning: implicit declaration of function 'pid_control' [-Wimplicit-function-declaration]
+  110 |   __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, pid_control(&htim2, &htim3));
+      |                                                ^~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                                        ^~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:182:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  182 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:38:
+../Core/Src/main.c: At top level:
+../Core/Inc/ui.h:27:6: warning: array 'sp_str' assumed to have one element
+   27 | char sp_str[];
+      |      ^~~~~~
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60892	    588	   2580	  64060	   fa3c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:42:29 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-size   BalancingBeam.elf 
+   text	   data	    bss	    dec	    hex	filename
+  60892	    588	   2580	  64060	   fa3c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+09:43:58 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:38:
+../Core/Inc/ui.h:55:1: warning: "/*" within comment [-Wcomment]
+   55 | /**
+      |  
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:110:10: warning: implicit declaration of function 'pid_control' [-Wimplicit-function-declaration]
+  110 |   duty = pid_control(&htim2, &htim3);
+      |          ^~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:183:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  183 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:38:
+../Core/Src/main.c: At top level:
+../Core/Inc/ui.h:27:6: warning: array 'sp_str' assumed to have one element
+   27 | char sp_str[];
+      |      ^~~~~~
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60900	    588	   2588	  64076	   fa4c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:44:02 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-size   BalancingBeam.elf 
+   text	   data	    bss	    dec	    hex	filename
+  60900	    588	   2588	  64076	   fa4c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+09:45:04 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:38:
+../Core/Inc/ui.h:55:1: warning: "/*" within comment [-Wcomment]
+   55 | /**
+      |  
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:406,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:110:48: warning: implicit declaration of function 'pid_control' [-Wimplicit-function-declaration]
+  110 |   __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, pid_control(&htim2, &htim3));
+      |                                                ^~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                                        ^~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:182:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  182 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:38:
+../Core/Src/main.c: At top level:
+../Core/Inc/ui.h:27:6: warning: array 'sp_str' assumed to have one element
+   27 | char sp_str[];
+      |      ^~~~~~
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60900	    588	   2588	  64076	   fa4c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:46:47 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:38:
+../Core/Inc/ui.h:55:1: warning: "/*" within comment [-Wcomment]
+   55 | /**
+      |  
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:406,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:110:48: warning: implicit declaration of function 'pid_control' [-Wimplicit-function-declaration]
+  110 |   __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, pid_control(d, sp));
+      |                                                ^~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                                        ^~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:182:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  182 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:38:
+../Core/Src/main.c: At top level:
+../Core/Inc/ui.h:27:6: warning: array 'sp_str' assumed to have one element
+   27 | char sp_str[];
+      |      ^~~~~~
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60884	    588	   2588	  64060	   fa3c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:46:53 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-size   BalancingBeam.elf 
+   text	   data	    bss	    dec	    hex	filename
+  60884	    588	   2588	  64060	   fa3c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+09:47:51 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60916	    588	   2588	  64092	   fa5c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:49:54 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60884	    588	   2588	  64060	   fa3c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:50:59 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60748	    588	   2588	  63924	   f9b4	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:51:18 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60916	    588	   2588	  64092	   fa5c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:51:32 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60924	    588	   2588	  64100	   fa64	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:52:28 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60916	    588	   2588	  64092	   fa5c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:57:02 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60924	    588	   2588	  64100	   fa64	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+09:58:56 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:38:
+../Core/Inc/ui.h:55:1: warning: "/*" within comment [-Wcomment]
+   55 | /**
+      |  
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:110:3: warning: implicit declaration of function 'pid_control' [-Wimplicit-function-declaration]
+  110 |   pid_control(&htim2, &htim3);
+      |   ^~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:181:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  181 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:38:
+../Core/Src/main.c: At top level:
+../Core/Inc/ui.h:27:6: warning: array 'sp_str' assumed to have one element
+   27 | char sp_str[];
+      |      ^~~~~~
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60892	    588	   2580	  64060	   fa3c	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+10:00:45 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/control_algorithm.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/control_algorithm.d" -MT"Core/Src/control_algorithm.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/control_algorithm.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:38:
+../Core/Inc/ui.h:55:1: warning: "/*" within comment [-Wcomment]
+   55 | /**
+      |  
+In file included from ../Core/Inc/stm32f7xx_hal_conf.h:406,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:110:48: warning: implicit declaration of function 'pid_control' [-Wimplicit-function-declaration]
+  110 |   __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, pid_control(d, sp));
+      |                                                ^~~~~~~~~~~
+../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_tim.h:1535:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1535 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                                        ^~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:182:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
+  182 |    HCSRO4_Read(&htim8);
+      |    ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:38:
+../Core/Src/main.c: At top level:
+../Core/Inc/ui.h:27:6: warning: array 'sp_str' assumed to have one element
+   27 | char sp_str[];
+      |      ^~~~~~
+arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BalancingBeam.elf
+ 
+arm-none-eabi-size   BalancingBeam.elf 
+arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
+arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
+   text	   data	    bss	    dec	    hex	filename
+  60924	    588	   2588	  64100	   fa64	BalancingBeam.elf
+Finished building: default.size.stdout
+ 
+Finished building: BalancingBeam.bin
+ 
+Finished building: BalancingBeam.list
+ 
+10:00:51 **** Incremental Build of configuration Debug for project BalancingBeam ****
+make -j8 all 
+arm-none-eabi-size   BalancingBeam.elf 
+   text	   data	    bss	    dec	    hex	filename
+  60924	    588	   2588	  64100	   fa64	BalancingBeam.elf
+Finished building: default.size.stdout
+ 

@@ -1,37 +1,10 @@
-09:14:55 **** Incremental Build of configuration Debug for project BalancingBeam ****
+10:00:51 **** Incremental Build of configuration Debug for project BalancingBeam ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F746xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-In file included from ../Core/Src/main.c:38:
-../Core/Inc/ui.h:55:1: warning: "/*" within comment [-Wcomment]
-   55 | /**
-      |  
-../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
-../Core/Src/main.c:107:3: warning: implicit declaration of function 'pid_control' [-Wimplicit-function-declaration]
-  107 |   pid_control(&htim2, &htim3);
-      |   ^~~~~~~~~~~
-../Core/Src/main.c: In function 'main':
-../Core/Src/main.c:178:4: warning: implicit declaration of function 'HCSRO4_Read' [-Wimplicit-function-declaration]
-  178 |    HCSRO4_Read(&htim8);
-      |    ^~~~~~~~~~~
-In file included from ../Core/Src/main.c:38:
-../Core/Src/main.c: At top level:
-../Core/Inc/ui.h:27:6: warning: array 'sp_str' assumed to have one element
-   27 | char sp_str[];
-      |      ^~~~~~
-arm-none-eabi-gcc -o "BalancingBeam.elf" @"objects.list"  -larm_cortexM7lfsp_math -mcpu=cortex-m7 -T"C:\Users\Maciek\Documents\Studia\Semestr 5\Microprocessor systems\Final Project\MCU-based-Control-and-Measurement-System\STM32CubeIDE\Final\BalancingBeam\STM32F746ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BalancingBeam.map" -Wl,--gc-sections -static -L"C:\Users\Maciek\STM32Cube\Repository\Packs\ARM\CMSIS\5.7.0\CMSIS\DSP\Lib\GCC" --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: BalancingBeam.elf
- 
 arm-none-eabi-size   BalancingBeam.elf 
-arm-none-eabi-objdump -h -S  BalancingBeam.elf  > "BalancingBeam.list"
-arm-none-eabi-objcopy  -O binary  BalancingBeam.elf  "BalancingBeam.bin"
    text	   data	    bss	    dec	    hex	filename
-  60900	    588	   2580	  64068	   fa44	BalancingBeam.elf
+  60924	    588	   2588	  64100	   fa64	BalancingBeam.elf
 Finished building: default.size.stdout
  
-Finished building: BalancingBeam.bin
- 
-Finished building: BalancingBeam.list
- 
 
-09:14:56 Build Finished. 0 errors, 4 warnings. (took 1s.216ms)
+10:00:51 Build Finished. 0 errors, 0 warnings. (took 353ms)
 

@@ -36,7 +36,7 @@
  * @param[in] htim3 :  pid timer handler
  * @return None
  */
-void pid_control(TIM_HandleTypeDef *htim2, TIM_HandleTypeDef *htim3){
+int pid_control(float dist, int setp){
 
 		error = (float32_t)(sp-d);
 
@@ -50,11 +50,8 @@ void pid_control(TIM_HandleTypeDef *htim2, TIM_HandleTypeDef *htim3){
 		else if(duty_val >= DUTY_MAX){
 			duty_val = DUTY_MAX;
 		}
-		if(d==sp + sp*0.01 && d == sp- sp*0.01 ){
+		if(d < sp + sp*0.01 && d > sp- sp*0.01 ){
 			duty_val=HOME_POS;
-			HAL_TIM_Base_Stop_IT(htim3);
 		}
-
-		__HAL_TIM_SET_COMPARE(htim2, TIM_CHANNEL_1, (int)duty_val);
-
+		return duty_val;
 	}

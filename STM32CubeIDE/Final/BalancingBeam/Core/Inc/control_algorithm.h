@@ -44,5 +44,5 @@ arm_pid_instance_f32 pid = {.Kp = 1, .Ki = 0.000147368, .Kd =0.35};
  * @param[in] htim3 :  pid timer handler
  * @return None
  */
-void pid_control(TIM_HandleTypeDef *htim2, TIM_HandleTypeDef *htim3);
+int pid_control(float dist, int setp);
 

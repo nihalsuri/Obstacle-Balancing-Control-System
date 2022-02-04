@@ -65,7 +65,7 @@ extern uint32_t duty_val;
 extern float32_t SWV_VAR;
 extern float32_t error;
 extern int sp;
-
+int duty;
 extern arm_pid_instance_f32 pid;
 char msg_str[]="";
 int sp_temp;
@@ -81,6 +81,12 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+
+/**
+ * @brief setting set point through UART
+ * @param[in] huart :  uart handler
+ * @return None
+ */
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 
 	if(huart->Instance == USART3){
@@ -94,17 +100,15 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart){
 		  if(sp_temp >10 && sp_temp < 20)
 		      sp = sp_temp;
 		  	  sp_adc = 0;
-
 	  }
-
 	}
-
 }
 
 void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef * htim){
 
 	if(htim->Instance == TIM3)
-		pid_control(&htim2, &htim3);
+		__HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, pid_control(d, sp));
+
 
 	if(htim->Instance == TIM4)
 		uart_tx(&huart3);
