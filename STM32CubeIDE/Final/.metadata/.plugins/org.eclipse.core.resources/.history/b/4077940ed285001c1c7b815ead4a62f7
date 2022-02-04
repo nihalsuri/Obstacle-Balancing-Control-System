@@ -40,9 +40,9 @@ arm_pid_instance_f32 pid = {.Kp = 1, .Ki = 0.000147368, .Kd =0.35};
 /**
  * @brief PID controller implementation.
  * @note calculation of duty cycle fed to servo
- * @param[in] dist :  current distance of obstacle
- * @param[in] setp :  set point
- * @return duty cycle [% * 10]
+ * @param[in] htim2 :  servo timer handler
+ * @param[in] htim3 :  pid timer handler
+ * @return None
  */
 int pid_control(float dist, int setp);
 

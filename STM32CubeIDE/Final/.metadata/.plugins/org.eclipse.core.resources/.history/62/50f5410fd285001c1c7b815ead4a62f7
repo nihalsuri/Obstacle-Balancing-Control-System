@@ -32,13 +32,13 @@
 /**
  * @brief PID controller implementation.
  * @note calculation of duty cycle fed to servo
- * @param[in] dist :  current distance of obstacle
- * @param[in] setp :  set point
- * @return duty cycle [% * 10]
+ * @param[in] htim2 :  servo timer handler
+ * @param[in] htim3 :  pid timer handler
+ * @return None
  */
 int pid_control(float dist, int setp){
 
-		error = (float32_t)(setp-dist);
+		error = (float32_t)(sp-d);
 
 		SWV_VAR = arm_pid_f32(&pid, error);
 
@@ -50,7 +50,7 @@ int pid_control(float dist, int setp){
 		else if(duty_val >= DUTY_MAX){
 			duty_val = DUTY_MAX;
 		}
-		if(dist < setp + setp*0.01 && dist > setp- setp*0.01 ){
+		if(d < sp + sp*0.01 && d > sp- sp*0.01 ){
 			duty_val=HOME_POS;
 		}
 		return duty_val;

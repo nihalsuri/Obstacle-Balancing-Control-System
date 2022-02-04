@@ -84,7 +84,6 @@ void SystemClock_Config(void);
 
 /**
  * @brief setting set point through UART
- * @note : range of input: 10 - 20, input 'SP:00' - switches control to ADC
  * @param[in] huart :  uart handler
  * @return None
  */
